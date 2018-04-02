@@ -1,0 +1,139 @@
+
+<!--taskManager -->
+<div id="taskManager">
+	 <div id="taskManager_main">
+              <div class="talkMe ">
+               <!--send content-->
+               <div class="send_content">
+                  <h1>
+                  {pmi:rwgl_insert_2} {pmi:rwgl_insert_1}
+                  </h1>
+               <!--account-->
+                  <div class="send_selContent">
+                    <div class="taskM_box">
+                        <div class="second_tasks">
+                         <h5 class="ftask_title">一级菜单列表</h5>
+                          <ul class="sec_taskBackk">
+                             
+                          </ul>
+                       
+                        </div>
+                        <!--three-->
+                         <div class="three_box com_fLeft">
+                             <div class="stask_boxList">
+                              <h4 class="h4_title"><span></span> 
+                                <span class="sysTask_del tasks_style do_right"></span>
+                                 <span class="sysTask_edit tasks_style do_right"></span> 
+                                 <span class="add_three"></span> 
+                              </h4>
+                              <ul class="three_tasks">
+                                 
+                            </ul>
+                            </div>
+                            <!--list end-->
+                       </div>
+                    </div>
+                    <div class="com_clear"></div>
+                  </div>
+                </div>
+                
+     
+                
+             </div>
+	</div>
+	<!--new_tasks-->
+    <div id="new_tasks" class="com_none">
+			<!--send content-->
+			<div id="new_tasks_main" class="send_content">
+				<h1></h1>
+				<div class="send_selContent new_tasks">
+					<div class="service_style">
+						<label for="task_name" class="task_name">
+							任务名称：
+						</label>
+						<input type="text" id="newtask_nameinput" class="task_count" />
+						<span style="color: red;font-size: 12px;" class="com_none" id="mui_name"></span>
+					</div>
+					<div class="service_style">
+						<label for="first_taMtype" class="task_name">
+							所属一级菜单：
+						</label>
+						<select id="taskManager_first_taMtype" class="task_Mtype">
+							
+						</select>
+					</div>
+					<div class="service_style">
+						<label for="sec_taMtype" class="task_name"> 
+							所属二级菜单：
+						</label>
+						<select id="taskManager_sec_taMtype" class="task_Mtype">
+							
+						</select>
+						<span style="color: red;font-size: 12px;" class="com_none" id="mec_name"></span>
+					</div>
+					<div class="task_expression">
+						<!-- 
+						<p class="exp_what">
+							什么是表达式？onfocus="this.blur();"
+						</p> -->
+						<p class="exp_what">
+							<span id="task_expBtn">设置表达式</span>&nbsp;&nbsp;
+							<span id="task_expclear">清空</span>
+						</p>
+						<textarea id="task_exptext" class="set_esp" readonly="readonly" ></textarea>
+						<div class="com_clear"></div>
+						<div class="more_doExp">
+							<span class="com_fLeft">垃圾词管理：</span>
+                         <div class="mynum_list">
+                               <h2 id="h2">
+                                   <span>全部</span>
+                                   <span class="mynum_type mynum_click"></span>
+                               </h2>
+                               <ul id="newTask_lajiSel" class="com_none">
+                                 
+                               </ul>
+                         </div>
+							<span id="taskManager_setexW" class="set_exW">设置垃圾词</span>
+						</div>
+					</div>
+					<div class="service_style">
+						<label class="task_name">
+							时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间：
+						</label>
+						<select id="taskManager_searchtime" class="task_count">
+							<option value="0">
+								今天
+							</option>
+							<option value="1">
+								昨天
+							</option>
+							<option value="2">
+								最近三天
+							</option>
+							<option value="6">
+								最近一周
+							</option>
+							<option value="29">
+								最近一月
+							</option>
+							<option value="89">
+								最近三月
+							</option>
+						</select>
+					</div>
+					<div class="service_style"></div>
+					<div class="service_style">
+						<div id="newtask_save" class="push_do push_save">
+							保存
+						</div>
+						<div id="newtask_cancel" class="push_do push_close">
+							取消
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+          	<!--newtasks end-->      
+</div>	
+<!--taskManager end-->
+

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="../jquery.bgIframe/jquery.bgiframe.js" type="text/javascript"></script>
+    <script src="../jquery.loading/jquery.loading.min.js" type="text/javascript"></script>
+    <script src="../jquery.tool/jquery.tool.js" type="text/javascript"></script>
+    <script src="jquery.keyupTo.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.dd').bgiframe();
+            $('.inputB').keyupTo({
+                url: '../../JQuery/jquery.keyupTo/json.aspx/GetInfo',
+                param: '{"value":"{0}"}',
+                isCache: "true",
+                handle: $('.look'),
+                id: 'm',
+                className: 'a',
+                onComplete: function (div, input, data) {
+                    alert($.toJson(data));
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+    <div style="margin: 0 auto; width: 50%;">
+        <input type="text" class="inputB" /><input class="look" type="button" value="查看" />
+    </div>
+</body>
+</html>

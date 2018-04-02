@@ -1,0 +1,276 @@
+0    DEBUG [2014-06-18 17:47:35]  setAction Old action is (null)
+0    DEBUG [2014-06-18 17:47:35]  setAction New action is (http://agent.xunku.org:8080/axis2/services/WeiboService/getWeiboAppSource)
+17   DEBUG [2014-06-18 17:47:35]  OnDemandLogger initialized for class org.apache.axis2.context.AbstractContext is:org.apache.commons.logging.impl.Log4JLogger@117a8bd
+29   DEBUG [2014-06-18 17:47:35]  Trying to find [org/apache/axis2/deployment/axis2_default.xml] using sun.misc.Launcher$AppClassLoader@19821f class loader.
+51   DEBUG [2014-06-18 17:47:35]  About to create XMLInputFactory implementation with classloader=sun.misc.Launcher$AppClassLoader@19821f
+60   DEBUG [2014-06-18 17:47:35]  The classloader for javax.xml.stream.XMLInputFactory is: null
+76   DEBUG [2014-06-18 17:47:35]  StAX implementation at jar:file:/D:/Program%20Files/Java/jre6/lib/rt.jar!/ is:
+  Title:         Java Runtime Environment
+  Symbolic name: null
+  Vendor:        Sun Microsystems, Inc.
+  Version:       1.6.0_10-rc2
+80   DEBUG [2014-06-18 17:47:35]  Detected StAX dialect: SJSXP
+81   DEBUG [2014-06-18 17:47:35]  Created XMLInputFactory = class org.apache.axiom.util.stax.wrapper.ImmutableXMLInputFactory with classloader=sun.misc.Launcher$AppClassLoader@19821f
+81   DEBUG [2014-06-18 17:47:35]  Configuration = DEFAULT
+81   DEBUG [2014-06-18 17:47:35]  Size of XMLInputFactory map for this configuration = 1
+82   DEBUG [2014-06-18 17:47:35]  Configurations for which factories have been cached = [DEFAULT]
+92   DEBUG [2014-06-18 17:47:35]  XMLStreamReader is org.apache.axiom.util.stax.dialect.SJSXPStreamReaderWrapper
+118  DEBUG [2014-06-18 17:47:35]  Builder is already complete.
+150  DEBUG [2014-06-18 17:47:35]  Handler RequestURIBasedDispatcher added to Phase Transport
+152  DEBUG [2014-06-18 17:47:35]  Handler SOAPActionBasedDispatcher added to Phase Transport
+153  DEBUG [2014-06-18 17:47:35]  Handler AddressingBasedDispatcher added to Phase Addressing
+154  DEBUG [2014-06-18 17:47:35]  Handler RequestURIBasedDispatcher added to Phase Dispatch
+154  DEBUG [2014-06-18 17:47:35]  Handler SOAPActionBasedDispatcher added to Phase Dispatch
+154  DEBUG [2014-06-18 17:47:35]  Handler RequestURIOperationDispatcher added to Phase Dispatch
+155  DEBUG [2014-06-18 17:47:35]  Handler SOAPMessageBodyBasedDispatcher added to Phase Dispatch
+156  DEBUG [2014-06-18 17:47:35]  Handler HTTPLocationBasedDispatcher added to Phase Dispatch
+156  DEBUG [2014-06-18 17:47:35]  Handler RequestURIBasedDispatcher added to Phase Transport
+156  DEBUG [2014-06-18 17:47:35]  Handler SOAPActionBasedDispatcher added to Phase Transport
+157  DEBUG [2014-06-18 17:47:35]  Handler AddressingBasedDispatcher added to Phase Addressing
+157  DEBUG [2014-06-18 17:47:35]  Handler RequestURIBasedDispatcher added to Phase Dispatch
+157  DEBUG [2014-06-18 17:47:35]  Handler SOAPActionBasedDispatcher added to Phase Dispatch
+157  DEBUG [2014-06-18 17:47:35]  Handler RequestURIOperationDispatcher added to Phase Dispatch
+157  DEBUG [2014-06-18 17:47:35]  Handler SOAPMessageBodyBasedDispatcher added to Phase Dispatch
+157  DEBUG [2014-06-18 17:47:35]  Handler HTTPLocationBasedDispatcher added to Phase Dispatch
+214  DEBUG [2014-06-18 17:47:35]  Entry: AxisOperation::getInputAction
+214  DEBUG [2014-06-18 17:47:35]  Exit: AxisOperation::getInputAction null
+215  DEBUG [2014-06-18 17:47:35]  Entry: AxisOperation::setSoapAction, previous soapAction: null updated soapAction: urn:anonRobustOp
+215  DEBUG [2014-06-18 17:47:35]  Exit: AxisOperation::setSoapAction
+215  DEBUG [2014-06-18 17:47:35]  mapActionToOperation: Mapping Action to Operation: action: anonRobustOp; operation: org.apache.axis2.description.RobustOutOnlyAxisOperation@116ab4enamed: {http://ws.apache.org/namespaces/axis2}anonRobustOp
+244  DEBUG [2014-06-18 17:47:35]  DEBUG_FRAME = org.apache.axis2.util.JavaUtils.callStackToString(JavaUtils.java:564)
+	DEBUG_FRAME = org.apache.axis2.description.AxisService.mapActionToOperation(AxisService.java:821)
+	DEBUG_FRAME = org.apache.axis2.description.AxisService.addOperation(AxisService.java:667)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.createAnonymousService(ServiceClient.java:269)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.configureServiceClient(ServiceClient.java:172)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.<init>(ServiceClient.java:144)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.<init>(ServiceClient.java:251)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.getServiceTemplateMethod(WeiboWebService.java:165)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.getWeiboAppSource(WeiboWebService.java:53)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.main(WeiboWebService.java:22)
+
+244  DEBUG [2014-06-18 17:47:35]  Entry: AxisOperation::getInputAction
+244  DEBUG [2014-06-18 17:47:35]  Debug: AxisOperation::getInputAction - using soapAction
+244  DEBUG [2014-06-18 17:47:35]  Exit: AxisOperation::getInputAction urn:anonRobustOp
+244  DEBUG [2014-06-18 17:47:35]  mapActionToOperation: Mapping Action to Operation: action: urn:anonRobustOp; operation: org.apache.axis2.description.RobustOutOnlyAxisOperation@116ab4enamed: {http://ws.apache.org/namespaces/axis2}anonRobustOp
+245  DEBUG [2014-06-18 17:47:35]  DEBUG_FRAME = org.apache.axis2.util.JavaUtils.callStackToString(JavaUtils.java:564)
+	DEBUG_FRAME = org.apache.axis2.description.AxisService.mapActionToOperation(AxisService.java:821)
+	DEBUG_FRAME = org.apache.axis2.description.AxisService.addOperation(AxisService.java:671)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.createAnonymousService(ServiceClient.java:269)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.configureServiceClient(ServiceClient.java:172)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.<init>(ServiceClient.java:144)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.<init>(ServiceClient.java:251)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.getServiceTemplateMethod(WeiboWebService.java:165)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.getWeiboAppSource(WeiboWebService.java:53)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.main(WeiboWebService.java:22)
+
+246  DEBUG [2014-06-18 17:47:35]  Client-defined operation name matches default operation name. this may cause interoperability issues.  Name is: {http://ws.apache.org/namespaces/axis2}anonOutonlyOp
+246  DEBUG [2014-06-18 17:47:35]  Entry: AxisOperation::getInputAction
+246  DEBUG [2014-06-18 17:47:35]  Exit: AxisOperation::getInputAction null
+246  DEBUG [2014-06-18 17:47:35]  Entry: AxisOperation::setSoapAction, previous soapAction: null updated soapAction: urn:anonOutonlyOp
+246  DEBUG [2014-06-18 17:47:35]  Exit: AxisOperation::setSoapAction
+246  DEBUG [2014-06-18 17:47:35]  mapActionToOperation: Mapping Action to Operation: action: anonOutonlyOp; operation: org.apache.axis2.description.OutOnlyAxisOperation@af8358named: {http://ws.apache.org/namespaces/axis2}anonOutonlyOp
+246  DEBUG [2014-06-18 17:47:35]  DEBUG_FRAME = org.apache.axis2.util.JavaUtils.callStackToString(JavaUtils.java:564)
+	DEBUG_FRAME = org.apache.axis2.description.AxisService.mapActionToOperation(AxisService.java:821)
+	DEBUG_FRAME = org.apache.axis2.description.AxisService.addOperation(AxisService.java:667)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.createAnonymousService(ServiceClient.java:273)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.configureServiceClient(ServiceClient.java:172)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.<init>(ServiceClient.java:144)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.<init>(ServiceClient.java:251)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.getServiceTemplateMethod(WeiboWebService.java:165)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.getWeiboAppSource(WeiboWebService.java:53)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.main(WeiboWebService.java:22)
+
+246  DEBUG [2014-06-18 17:47:35]  Entry: AxisOperation::getInputAction
+246  DEBUG [2014-06-18 17:47:35]  Debug: AxisOperation::getInputAction - using soapAction
+246  DEBUG [2014-06-18 17:47:35]  Exit: AxisOperation::getInputAction urn:anonOutonlyOp
+246  DEBUG [2014-06-18 17:47:35]  mapActionToOperation: Mapping Action to Operation: action: urn:anonOutonlyOp; operation: org.apache.axis2.description.OutOnlyAxisOperation@af8358named: {http://ws.apache.org/namespaces/axis2}anonOutonlyOp
+246  DEBUG [2014-06-18 17:47:35]  DEBUG_FRAME = org.apache.axis2.util.JavaUtils.callStackToString(JavaUtils.java:564)
+	DEBUG_FRAME = org.apache.axis2.description.AxisService.mapActionToOperation(AxisService.java:821)
+	DEBUG_FRAME = org.apache.axis2.description.AxisService.addOperation(AxisService.java:671)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.createAnonymousService(ServiceClient.java:273)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.configureServiceClient(ServiceClient.java:172)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.<init>(ServiceClient.java:144)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.<init>(ServiceClient.java:251)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.getServiceTemplateMethod(WeiboWebService.java:165)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.getWeiboAppSource(WeiboWebService.java:53)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.main(WeiboWebService.java:22)
+
+247  DEBUG [2014-06-18 17:47:35]  Entry: AxisOperation::getInputAction
+247  DEBUG [2014-06-18 17:47:35]  Exit: AxisOperation::getInputAction null
+247  DEBUG [2014-06-18 17:47:35]  Entry: AxisOperation::setSoapAction, previous soapAction: null updated soapAction: urn:anonOutInOp
+247  DEBUG [2014-06-18 17:47:35]  Exit: AxisOperation::setSoapAction
+247  DEBUG [2014-06-18 17:47:35]  mapActionToOperation: Mapping Action to Operation: action: anonOutInOp; operation: org.apache.axis2.description.OutInAxisOperation@d80be3named: {http://ws.apache.org/namespaces/axis2}anonOutInOp
+247  DEBUG [2014-06-18 17:47:35]  DEBUG_FRAME = org.apache.axis2.util.JavaUtils.callStackToString(JavaUtils.java:564)
+	DEBUG_FRAME = org.apache.axis2.description.AxisService.mapActionToOperation(AxisService.java:821)
+	DEBUG_FRAME = org.apache.axis2.description.AxisService.addOperation(AxisService.java:667)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.createAnonymousService(ServiceClient.java:277)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.configureServiceClient(ServiceClient.java:172)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.<init>(ServiceClient.java:144)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.<init>(ServiceClient.java:251)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.getServiceTemplateMethod(WeiboWebService.java:165)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.getWeiboAppSource(WeiboWebService.java:53)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.main(WeiboWebService.java:22)
+
+247  DEBUG [2014-06-18 17:47:35]  Entry: AxisOperation::getInputAction
+247  DEBUG [2014-06-18 17:47:35]  Debug: AxisOperation::getInputAction - using soapAction
+247  DEBUG [2014-06-18 17:47:35]  Exit: AxisOperation::getInputAction urn:anonOutInOp
+247  DEBUG [2014-06-18 17:47:35]  mapActionToOperation: Mapping Action to Operation: action: urn:anonOutInOp; operation: org.apache.axis2.description.OutInAxisOperation@d80be3named: {http://ws.apache.org/namespaces/axis2}anonOutInOp
+248  DEBUG [2014-06-18 17:47:35]  DEBUG_FRAME = org.apache.axis2.util.JavaUtils.callStackToString(JavaUtils.java:564)
+	DEBUG_FRAME = org.apache.axis2.description.AxisService.mapActionToOperation(AxisService.java:821)
+	DEBUG_FRAME = org.apache.axis2.description.AxisService.addOperation(AxisService.java:671)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.createAnonymousService(ServiceClient.java:277)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.configureServiceClient(ServiceClient.java:172)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.<init>(ServiceClient.java:144)
+	DEBUG_FRAME = org.apache.axis2.client.ServiceClient.<init>(ServiceClient.java:251)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.getServiceTemplateMethod(WeiboWebService.java:165)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.getWeiboAppSource(WeiboWebService.java:53)
+	DEBUG_FRAME = com.xunku.service.WeiboWebService.main(WeiboWebService.java:22)
+
+248  DEBUG [2014-06-18 17:47:35]  Adding service to allServices map: [anonService2] 
+250  DEBUG [2014-06-18 17:47:35]  AxisOperation::getSoapAction urn:anonOutInOp
+252  DEBUG [2014-06-18 17:47:35]  AxisOperation::getSoapAction urn:anonRobustOp
+252  DEBUG [2014-06-18 17:47:35]  AxisOperation::getSoapAction urn:anonOutonlyOp
+252  DEBUG [2014-06-18 17:47:35]  AxisOperation::getSoapAction urn:anonOutInOp
+252  DEBUG [2014-06-18 17:47:35]  AxisOperation::getSoapAction urn:anonRobustOp
+253  DEBUG [2014-06-18 17:47:35]  AxisOperation::getSoapAction urn:anonOutonlyOp
+253  DEBUG [2014-06-18 17:47:35]  Adding service to allEndpoints map: (anonService2,anonService2HttpSoap12Endpoint) 
+253  DEBUG [2014-06-18 17:47:35]  Adding service to allEndpoints map: (anonService2,anonService2HttpEndpoint) 
+253  DEBUG [2014-06-18 17:47:35]  Adding service to allEndpoints map: (anonService2,anonService2HttpSoap11Endpoint) 
+253  DEBUG [2014-06-18 17:47:35]  After adding to allEndpoints map, size is 3
+260  DEBUG [2014-06-18 17:47:35]  Get operation for {http://ws.apache.org/namespaces/axis2}anonOutInOp
+260  DEBUG [2014-06-18 17:47:35]  Found axis operation:  org.apache.axis2.description.OutInAxisOperation@d80be3
+285  DEBUG [2014-06-18 17:47:35]  OnDemandLogger initialized for class org.apache.axis2.context.ConfigurationContext is:org.apache.commons.logging.impl.Log4JLogger@910040
+285  DEBUG [2014-06-18 17:47:35]  registerOperationContext (false): org.apache.axis2.context.OperationContext@1a786c3 with key: urn:uuid:e313921b-c4c0-4653-b708-7af48f71e9b4
+285  DEBUG [2014-06-18 17:47:35]  Entry: OutInAxisOperationClient::execute, true
+285  DEBUG [2014-06-18 17:47:35]  getAction (null) from org.apache.axis2.client.Options@18088c0
+285  DEBUG [2014-06-18 17:47:35]  SoapAction is (null)
+285  DEBUG [2014-06-18 17:47:35]  getAction (http://agent.xunku.org:8080/axis2/services/WeiboService/getWeiboAppSource) from org.apache.axis2.client.Options@1922221
+285  DEBUG [2014-06-18 17:47:35]  getAction (null) from org.apache.axis2.client.Options@18088c0
+285  DEBUG [2014-06-18 17:47:35]  Old SoapAction is (null)
+285  DEBUG [2014-06-18 17:47:35]  New SoapAction is (http://agent.xunku.org:8080/axis2/services/WeiboService/getWeiboAppSource)
+285  DEBUG [2014-06-18 17:47:35]  setAction Old action is (null)
+285  DEBUG [2014-06-18 17:47:35]  setAction New action is (http://agent.xunku.org:8080/axis2/services/WeiboService/getWeiboAppSource)
+287  DEBUG [2014-06-18 17:47:35]  OutInAxisOperationClient: useAsyncOption null
+287  DEBUG [2014-06-18 17:47:35]  registerOperationContext (false): org.apache.axis2.context.OperationContext@1a786c3 with key: urn:uuid:e313921b-c4c0-4653-b708-7af48f71e9b4
+287  DEBUG [2014-06-18 17:47:35]  getAction (http://agent.xunku.org:8080/axis2/services/WeiboService/getWeiboAppSource) from org.apache.axis2.client.Options@18088c0
+287  DEBUG [2014-06-18 17:47:35]  WASAction is (http://agent.xunku.org:8080/axis2/services/WeiboService/getWeiboAppSource)
+287  DEBUG [2014-06-18 17:47:35]  msgContext: [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] action: http://agent.xunku.org:8080/axis2/services/WeiboService/getWeiboAppSource
+288  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Checking pre-condition for Phase "RMPhase"
+288  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Invoking phase "RMPhase"
+289  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Checking post-conditions for phase "RMPhase"
+289  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Checking pre-condition for Phase "OpPhase"
+289  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Invoking phase "OpPhase"
+289  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Checking post-conditions for phase "OpPhase"
+289  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Checking pre-condition for Phase "OperationOutPhase"
+289  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Invoking phase "OperationOutPhase"
+289  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Checking post-conditions for phase "OperationOutPhase"
+289  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Checking pre-condition for Phase "PolicyDetermination"
+289  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Invoking phase "PolicyDetermination"
+289  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Checking post-conditions for phase "PolicyDetermination"
+289  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Checking pre-condition for Phase "MessageOut"
+289  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Invoking phase "MessageOut"
+290  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Checking post-conditions for phase "MessageOut"
+290  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Checking pre-condition for Phase "Security"
+290  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Invoking phase "Security"
+290  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Checking post-conditions for phase "Security"
+299  DEBUG [2014-06-18 17:47:35]  getAction (http://agent.xunku.org:8080/axis2/services/WeiboService/getWeiboAppSource) from org.apache.axis2.client.Options@18088c0
+299  DEBUG [2014-06-18 17:47:35]  SoapAction is (http://agent.xunku.org:8080/axis2/services/WeiboService/getWeiboAppSource)
+299  DEBUG [2014-06-18 17:47:35]  SOAP Action from messageContext : (http://agent.xunku.org:8080/axis2/services/WeiboService/getWeiboAppSource)
+320  DEBUG [2014-06-18 17:47:35]  Start getContentType: OMOutputFormat [ mimeBoundary =null rootContentId=null doOptimize=false doingSWA=false isSOAP11=true charSetEncoding=UTF-8 xmlVersion=null contentType=null ignoreXmlDeclaration=false autoCloseWriter=false actionProperty=null optimizedThreshold=0]
+320  DEBUG [2014-06-18 17:47:35]  getContentType= {text/xml}   OMOutputFormat [ mimeBoundary =null rootContentId=null doOptimize=false doingSWA=false isSOAP11=true charSetEncoding=UTF-8 xmlVersion=null contentType=text/xml ignoreXmlDeclaration=false autoCloseWriter=false actionProperty=null optimizedThreshold=0]
+320  DEBUG [2014-06-18 17:47:35]  contentType from the OMOutputFormat =text/xml
+320  DEBUG [2014-06-18 17:47:35]  contentType returned =text/xml; charset=UTF-8
+356  DEBUG [2014-06-18 17:47:35]  start writeTo()
+356  DEBUG [2014-06-18 17:47:35]    preserve=false
+356  DEBUG [2014-06-18 17:47:35]    isOptimized=false
+357  DEBUG [2014-06-18 17:47:35]    isDoingSWA=false
+360  DEBUG [2014-06-18 17:47:35]  Creating MTOMXMLStreamWriter
+360  DEBUG [2014-06-18 17:47:35]  OutputStream =class org.apache.commons.httpclient.ChunkedOutputStream
+360  DEBUG [2014-06-18 17:47:35]  OMFormat = OMOutputFormat [ mimeBoundary =null rootContentId=null doOptimize=false doingSWA=false isSOAP11=true charSetEncoding=UTF-8 xmlVersion=null contentType=text/xml ignoreXmlDeclaration=false autoCloseWriter=false actionProperty=null optimizedThreshold=0]
+360  DEBUG [2014-06-18 17:47:35]  preserveAttachments = false
+361  DEBUG [2014-06-18 17:47:35]  About to create XMLOutputFactory implementation with classloader=sun.misc.Launcher$AppClassLoader@19821f
+361  DEBUG [2014-06-18 17:47:35]  The classloader for javax.xml.stream.XMLOutputFactory is: null
+362  DEBUG [2014-06-18 17:47:35]  Created XMLOutputFactory = class org.apache.axiom.util.stax.wrapper.ImmutableXMLOutputFactory for classloader=sun.misc.Launcher$AppClassLoader@19821f
+362  DEBUG [2014-06-18 17:47:35]  Configuration = DEFAULT
+362  DEBUG [2014-06-18 17:47:35]  Size of XMLOutFactory map for this configuration = 1
+362  DEBUG [2014-06-18 17:47:35]  Configurations for which factories have been cached = [DEFAULT]
+365  DEBUG [2014-06-18 17:47:35]  XMLStreamWriter is org.apache.axiom.util.stax.dialect.SJSXPStreamWriterWrapper
+367  DEBUG [2014-06-18 17:47:35]  Could not close builder or parser due to:
+367  DEBUG [2014-06-18 17:47:35]  builder is null
+367  DEBUG [2014-06-18 17:47:35]  Calling MTOMXMLStreamWriter.flush
+368  DEBUG [2014-06-18 17:47:35]  close
+368  DEBUG [2014-06-18 17:47:35]  end writeTo()
+525  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() in Phase "Security"
+525  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() in Phase "MessageOut"
+525  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() in Phase "PolicyDetermination"
+525  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() in Phase "OperationOutPhase"
+525  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() in Phase "OpPhase"
+525  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=961b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() in Phase "RMPhase"
+525  DEBUG [2014-06-18 17:47:35]  getAction (http://agent.xunku.org:8080/axis2/services/WeiboService/getWeiboAppSource) from org.apache.axis2.client.Options@1922221
+525  DEBUG [2014-06-18 17:47:35]  Old SoapAction is (http://agent.xunku.org:8080/axis2/services/WeiboService/getWeiboAppSource)
+525  DEBUG [2014-06-18 17:47:35]  New SoapAction is (null)
+525  DEBUG [2014-06-18 17:47:35]  setAction Old action is (null)
+525  DEBUG [2014-06-18 17:47:35]  setAction New action is (null)
+544  DEBUG [2014-06-18 17:47:35]  createSOAPEnvelope using Builder (class org.apache.axis2.builder.SOAPBuilder) selected from type (text/xml)
+545  DEBUG [2014-06-18 17:47:35]  char set encoding set from default =UTF-8
+545  DEBUG [2014-06-18 17:47:35]  About to create XMLInputFactory implementation with classloader=sun.misc.Launcher$AppClassLoader@19821f
+545  DEBUG [2014-06-18 17:47:35]  The classloader for javax.xml.stream.XMLInputFactory is: null
+546  DEBUG [2014-06-18 17:47:35]  Created XMLInputFactory = class org.apache.axiom.util.stax.wrapper.ImmutableXMLInputFactory with classloader=sun.misc.Launcher$AppClassLoader@19821f
+546  DEBUG [2014-06-18 17:47:35]  Configuration = SOAP
+546  DEBUG [2014-06-18 17:47:35]  Size of XMLInputFactory map for this configuration = 1
+546  DEBUG [2014-06-18 17:47:35]  Configurations for which factories have been cached = [SOAP, DEFAULT]
+547  DEBUG [2014-06-18 17:47:35]  XMLStreamReader is org.apache.axiom.util.stax.dialect.SJSXPStreamReaderWrapper
+549  DEBUG [2014-06-18 17:47:35]  Starting to process SOAP 1.1 message
+549  DEBUG [2014-06-18 17:47:35]  Build the OMElement Envelope by the StaxSOAPModelBuilder
+549  DEBUG [2014-06-18 17:47:35]  Build the OMElement Body by the StaxSOAPModelBuilder
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Checking pre-condition for Phase "Transport"
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking phase "Transport"
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking Handler 'RequestURIBasedDispatcher' in Phase 'Transport'
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking Handler 'SOAPActionBasedDispatcher' in Phase 'Transport'
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Checking post-conditions for phase "Transport"
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Checking pre-condition for Phase "Addressing"
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking phase "Addressing"
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking Handler 'AddressingBasedDispatcher' in Phase 'Addressing'
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Checking post-conditions for phase "Addressing"
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Checking pre-condition for Phase "Security"
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking phase "Security"
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Checking post-conditions for phase "Security"
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Checking pre-condition for Phase "PreDispatch"
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking phase "PreDispatch"
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Checking post-conditions for phase "PreDispatch"
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Checking pre-condition for Phase "Dispatch"
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking phase "Dispatch"
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking Handler 'RequestURIBasedDispatcher' in Phase 'Dispatch'
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking Handler 'SOAPActionBasedDispatcher' in Phase 'Dispatch'
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking Handler 'RequestURIOperationDispatcher' in Phase 'Dispatch'
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking Handler 'SOAPMessageBodyBasedDispatcher' in Phase 'Dispatch'
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking Handler 'HTTPLocationBasedDispatcher' in Phase 'Dispatch'
+550  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Checking post-conditions for phase "Dispatch"
+551  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] isReplyRedirected: ReplyTo is null. Returning false
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Checking pre-condition for Phase "RMPhase"
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking phase "RMPhase"
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Checking post-conditions for phase "RMPhase"
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Checking pre-condition for Phase "OpPhase"
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking phase "OpPhase"
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Checking post-conditions for phase "OpPhase"
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Checking pre-condition for Phase "OperationInPhase"
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking phase "OperationInPhase"
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Checking post-conditions for phase "OperationInPhase"
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() in Phase "OperationInPhase"
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() in Phase "OpPhase"
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() in Phase "RMPhase"
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() in Phase "Dispatch"
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() for Handler 'HTTPLocationBasedDispatcher' in Phase 'Dispatch'
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() for Handler 'SOAPMessageBodyBasedDispatcher' in Phase 'Dispatch'
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() for Handler 'RequestURIOperationDispatcher' in Phase 'Dispatch'
+552  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() for Handler 'SOAPActionBasedDispatcher' in Phase 'Dispatch'
+553  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() for Handler 'RequestURIBasedDispatcher' in Phase 'Dispatch'
+553  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() in Phase "PreDispatch"
+553  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() in Phase "Security"
+553  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() in Phase "Addressing"
+553  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() for Handler 'AddressingBasedDispatcher' in Phase 'Addressing'
+553  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() in Phase "Transport"
+553  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() for Handler 'SOAPActionBasedDispatcher' in Phase 'Transport'
+553  DEBUG [2014-06-18 17:47:35]  [MessageContext: logID=e61b0331cb7247223cac675071051b86b46c353893c69b66] Invoking flowComplete() for Handler 'RequestURIBasedDispatcher' in Phase 'Transport'
+553  DEBUG [2014-06-18 17:47:35]  Build the OMElement getWeiboAppSourceResponse by the StaxSOAPModelBuilder
+553  DEBUG [2014-06-18 17:47:35]  Build the OMElement return by the StaxSOAPModelBuilder

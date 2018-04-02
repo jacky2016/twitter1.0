@@ -1,0 +1,902 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,table,td,th,form,fieldset,img,dl,dt,dd
+	{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+	border: none;
+}
+
+li {
+	list-style: none;
+}
+
+.jquery_nothing {
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.jquery_clear {
+	clear: left;
+}
+
+#jquery_layer {
+	z-index: 1020;
+}
+
+.divTips,.divTipsAuto {
+	height: 14px;
+	line-height: 14px;
+	font-size: 12px;
+	background-color: #fff;
+	border: 1px solid black;
+	color: Green;
+	position: absolute;
+	padding: 2px;
+	text-align: center;
+	display: none;
+	z-index: 9999;
+}
+
+/*----------------------------------------jquery.timePicker start-----------------------------------*/
+.timePicker .left {
+	border: 1px solid #ccc;
+	float: left;
+}
+
+.timePicker .txt {
+	width: 25px;
+	text-align: center;
+	height: 18px;
+	line-height: 18px;
+	border: 0;
+	font-size: 14px;
+}
+
+.timePicker span {
+	width: 10px;
+	text-align: center;
+}
+
+.timePicker .right {
+	width: 19px;
+	height: 22px;
+	float: left;
+}
+
+.timePicker .arrow {
+	width: 19px;
+	height: 20px;
+	font-size: 8px;
+	line-height: 1px;
+}
+
+.timePicker .arrow .up {
+	background: url(images/timePickerClick.gif) no-repeat left top;
+	height: 10px;
+	width: 19px;
+	cursor: pointer;
+}
+
+.timePicker .arrow .uphover {
+	background: url(images/timePickerClick.gif) no-repeat right top;
+}
+
+.timePicker .arrow .down {
+	background: url(images/timePickerClick.gif) no-repeat left bottom;
+	height: 10px;
+	width: 19px;
+	margin-top: 1px;
+	cursor: pointer;
+}
+
+.timePicker .arrow .downhover {
+	background: url(images/timePickerClick.gif) no-repeat right bottom;
+}
+
+/*----------------------------------------jquery.timePicker end-----------------------------------*/
+	/*----------------------------------------jquery.windows start-----------------------------------*/
+.window {
+	position: absolute;
+	display: none;
+	z-index: 1021;
+}
+.window h1.titleLeft {
+	float: left;
+	font-size: 12px;
+	background: url(images/L1.png) no-repeat;
+	height: 41px;
+	width: 4px;
+}
+
+.window h1.title 
+{
+	background: #eee url(images/L2.png) repeat-x;/*#A5D5A7动态参数*/
+	text-align: left;
+	text-indent: 5px;
+	height: 41px;
+	line-height: 41px;
+	font-size: 14px;
+}
+
+.window .title em.close {
+	float: right;
+	width: 16px;
+	height: 41px;
+	margin-right:10px;
+	background: url(images/del.gif) no-repeat center center;
+	cursor: pointer;
+}
+
+.window .content {
+	background: #FFFFFF;
+	padding: 2px;
+	color: #000;
+    min-height:60px;
+}
+/*----------------------------------------jquery.windows end-----------------------------------*/
+	/*----------------------------------------jquery.windows.messageBox start-----------------------------------*/
+.messagebox {
+	width: 300px;
+	background-color: #fff;
+}
+
+.messagebox .ok,.messagebox .cancel {
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	float: right;
+	background-color: #BCBCBC;
+	color: #fff;
+	cursor: pointer;
+	display: none;
+}
+
+.messagebox .oked {
+	background-color: #bec3c7;
+}
+
+.messagebox .cancel {
+	background-color: #21afb9;
+	margin-left: 5px;
+}
+
+.messagebox .canceled {
+	background-color: #3ebac3;
+}
+
+.messagebox .count {
+	padding: 10px 0;
+}
+
+.messagebox .font {
+	width: 240px;
+	line-height: 30px;
+	margin-left: 10px;
+	float: left;
+	font-family: "微软雅黑";
+}
+
+.messagebox .pic {
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-left: 10px;
+}
+
+.messagebox .pic2 {
+	background: url(images/error.gif) no-repeat;
+}
+
+.messagebox .pic1,.messagebox .pic4 {
+	background: url(images/error.gif) no-repeat 0 -36px;
+}
+
+.messagebox .pic0 {
+	background: url(images/error.gif) no-repeat 0 -70px;
+}
+
+.messagebox .pic3 {
+	width: 60px;
+	height: 80px;
+	margin: 0 auto;
+	background: url(images/import_tip.gif) no-repeat;
+}
+
+/*----------------------------------------jquery.windows.messageBox end-----------------------------------*/
+	/*----------------------------------------jquery.pager.simple(高级的分页样式没有) start-----------------------------------*/
+.jPager {
+	height: 25px;
+	line-height: 25px;
+}
+
+.jPager ul,.jPager li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.jPager .select {
+	float: left;
+	width: 100px;
+	display:none;
+}
+
+.jPager .select span {
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.jPager .left {
+	float: left;
+	text-indent: 5px;
+}
+
+.jPager .left font {
+	color: Red;
+}
+
+.jPager .right {
+	float: right;
+	text-align: right;
+	height: 25px;
+}
+
+.jPager .right a {
+	display: block;
+	float: left;
+}
+
+.jPager .right .prolist {
+	position: relative;
+	width: 270px;
+	height: 25px;
+	margin-top: 2px;
+	overflow: hidden;
+	float: left;
+}
+
+.jPager .right .prolist .pro {
+	position: absolute;
+	width: 500px;
+	height: 25px;
+	top: 0;
+	left: 0;
+}
+
+.jPager .right .prolist .pro ul li {
+	float: left;
+	display: inline;
+	text-align: center;
+	font-size: 14px;
+}
+
+.jPager .right .prolist .pro ul li a {
+	margin-right: 0;
+	width: 25px;
+	cursor: pointer;
+}
+
+.jPager .right a.page {
+	width: 25px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background: #fafafa;
+	border: 1px solid #ccc;
+}
+
+.jPager .right .first {
+	background: url(images/page.gif) no-repeat -2px -3px;
+	border-right: 0;
+}
+
+.jPager .right .first:hover {
+	background: url(images/page.gif) no-repeat -33px -3px;
+}
+
+.jPager .right .prev {
+	background: url(images/page.gif) no-repeat -3px -28px;
+	border-right: 0;
+}
+
+.jPager .right .prev:hover {
+	background: url(images/page.gif) no-repeat -33px -28px;
+}
+
+.jPager .right .next {
+	background: url(images/page.gif) no-repeat -3px -51px;
+	border-left: 0;
+}
+
+.jPager .right .next:hover {
+	background: url(images/page.gif) no-repeat -33px -51px;
+}
+
+.jPager .right .last {
+	background: url(images/page.gif) no-repeat -2px -78px;
+	border-left: 0;
+}
+
+.jPager .right .last:hover {
+	background: url(images/page.gif) no-repeat -34px -78px;
+}
+
+.jPager .right .first,.jPager .right .prev,.jPager .right .next,.jPager .right .last
+	{
+	cursor: pointer;
+	border: #ccc solid 1px;
+	margin-top: 2px;
+}
+
+.jPager .right a.clickA,.jPager .right a.clickB {
+	width: 25px;
+	height: 20px;
+	margin: 2px 0 0 0;
+	cursor: pointer;
+	display: none;
+}
+
+.jPager .right a.select {
+	font-weight: Bold;
+	color: red;
+	font-size: 18px;
+}
+
+.jPager .right input {
+	font-size: 12px;
+	float: left;
+	border: 1px solid #ccc;
+	margin-top: 4px;
+	cursor: pointer;
+	diplay: none;
+}
+
+.jPager .right .txt {
+	width: 30px;
+	margin-right: 2px;
+	display: none;
+}
+
+.jPager .right .btn {
+	float: left;
+	display: none;
+}
+
+.jPager .right .prolist {
+	width: 250px;
+}
+
+.pagerhover {
+	color: red;
+}
+
+.jPager .right a.pageractive {
+	color: #fff;
+	background:#21afb9;
+}
+
+.jPager .right a.clickA {
+	background: url(images/left.gif) center center no-repeat;
+}
+
+.jPager .right a.clickB {
+	background: url(images/right.gif) center center no-repeat;
+}
+
+.jPager .page_button {
+	width: 25px;
+	height: 20px;
+}
+
+/*----------------------------------------jquery.pager.simple end-----------------------------------*/
+	/*----------------------------------------jquery.load.table start-----------------------------------*/
+.loadTable {
+	color: #333;
+}
+
+.loadTable th {
+	height: 24px;
+	background: #F2F2F2;
+	border-right: 1px solid #EAEAEA;
+}
+
+.loadTable th.thEnd {
+	border: none;
+}
+
+.loadTable tr td {
+	text-align: left;
+	border-bottom: 1px solid #EAEAEA;
+}
+
+.loadTable td span.delete {
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	background: url(images/datete3.gif) no-repeat;
+	margin: 0 auto;
+}
+
+/*----------------------------------------jquery.load.table end-----------------------------------*/
+	/*----------------------------------------jquery.keyupTo.patch start-----------------------------------*/
+.patch {
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #666;
+	border-top: none;
+	position: absolute;
+	display: none;
+	z-index: 9999;
+}
+
+.patch ul,.patch li {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.patch ul {
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+.patch ul li {
+	float: left;
+	line-height: 20px;
+	height: 20px;
+	width: 100%;
+	cursor: pointer;
+}
+
+.patch .pName {
+	float: right;
+	color: #3D5678;
+	padding-right: 5px;
+}
+
+.patch .name {
+	float: left;
+	padding-left: 5px;
+}
+
+/*----------------------------------------jquery.keyupTo.patch end-----------------------------------*/
+	/*----------------------------------------jquery.expression start-----------------------------------*/
+.divExpression ul,.divExpression li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.divExpression table tr td.cape {
+	border-left: solid 2px blue;
+	border-right: solid 2px blue;
+}
+
+/*--td边角样式开始--*/
+.divExpression .Role {
+	border-collapse: collapse;
+	border: 0;
+	width: 100%;
+}
+
+.divExpression .Role div {
+	height: 5px;
+	border-left: 2px solid blue;
+	font: 0px Arial;
+	line-height: 0;
+}
+
+.divExpression .Role .left {
+	float: left;
+}
+
+.divExpression .Role .right {
+	float: right;
+}
+
+/*--td边角样式结束--*/
+.divExpression .divClear {
+	height: 2px;
+	font: 0px Arial;
+	line-height: 0;
+}
+
+.divExpression .tableMain {
+	border-collapse: collapse;
+	border: 0;
+}
+
+/*添加删除按钮样式*/
+.divExpression .option {
+	width: 30px;
+	height: 25px;
+}
+
+/*table子项开始*/
+.divExpression .tableChild {
+	border-collapse: collapse;
+	border: 0;
+}
+
+.divExpression .tableChild .tableChild {
+	vertical-align: middle;
+}
+
+.divExpression .tableChild .txtValue {
+	border: 1px solid #E3E9EF;
+}
+
+/*----------------------------------------jquery.expression end-----------------------------------*/
+	/*----------------------------------------jquery.datePicker strat-----------------------------------*/
+.datePickAll {
+	width: 302px;
+	height: 175px;
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+.datePickAll ul,.datePickAll li,.datePickAll h1,.datePick h2 {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 12px;
+}
+
+.datePick {
+	width: 50%;
+	height: 175px;
+	float: left;
+	background: #fff;
+}
+
+.datePick span {
+	width: 150px;
+	height: 25px;
+	line-height: 25px;
+	background: url(images/top.gif) repeat-x;
+	display: block;
+	position: relative;
+}
+
+.datePick span.left {
+	margin: 2px 0 2px 2px;
+	text-indent: 35px;
+}
+
+.datePick span.right {
+	margin: 2px 2px 2px 0;
+	text-indent: 40px;
+}
+
+.datePick span.center {
+	margin: 2px 2px 2px 2px;
+	text-indent: 20px;
+}
+
+.datePick span.right h1 {
+	font-size: 12px;
+	height: 25px;
+	line-height: 25px;
+	float: right;
+}
+
+.datePick span h1#HL {
+	font-size: 12px;
+	width: 25px;
+	height: 25px;
+	background: url(images/left-xiao.gif) no-repeat center center;
+	float: left;
+}
+
+.datePick span h1#HR {
+	font-size: 12px;
+	width: 25px;
+	height: 25px;
+	background: url(images/right-xiao.gif) no-repeat center center;
+	float: right;
+}
+
+
+.datePick span h2#sc{
+ 	color: #fff;	
+}
+
+.datePick span.left h2,.datePick span.right h2,.datePick span.center h2
+	{
+	float: left;
+	font-size: 12px;
+}
+
+.datePick span select.selectMon {
+	position: absolute;
+	right: 60px;
+	top: 2px;
+}
+
+.datePick span select.selectYear {
+	position: absolute;
+	right: 2px;
+	top: 2px;
+}
+
+.datePick ul.ul_day,.datePick ul.uw {
+	width: 140px;
+	margin: 5px;
+}
+
+.datePick ul.ul_day li {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: Black;
+	float: left;
+	cursor: pointer;
+}
+
+.datePick ul.uw li {
+	width: 20px;
+	height: 15px;
+	line-height: 15px;
+	color: #999;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+}
+
+.datePick ul.ul_day li.mouseover {
+	background: #1C95C4;
+	color: #fff;
+}
+
+.datePick ul.ul_day li.mouseout {
+	background: #fff;
+	color: Black;
+}
+
+.datePick ul.ul_day li.click {
+	background: #1C95C4;
+	color: #fff;
+}
+
+.datePick ul.ul_day li.now {
+	background: #fff;
+	color: Red;
+}
+
+.datePick ul.ul_day li.txt {
+	background: #21afb9;
+	color: #fff;
+}
+
+.datePick ul.ul_day li.stop {
+	background: #fff;
+	color: #ccc;
+}
+
+/*----------------------------------------jquery.datePicker end-----------------------------------*/
+	/*----------------------------------------jquery.returnTop start-----------------------------------*/
+.returnTop {
+	display: none;
+	height: 175px;
+	position: fixed;
+	_position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.returnTop .font {
+	width: 20px;
+	padding: 5px;
+	text-align: center;
+	color: #fff;
+	font-family: "Microsoft YaHei";
+	cursor:pointer;
+}
+/*防止在IE6下div抖动*/
+* html{
+	background-image: url(about:blank);
+	background-attachment: fixed;
+}
+/*----------------------------------------jquery.returnTop end-----------------------------------*/
+	/*----------------------------------------jquery.cloud start-----------------------------------*/
+div.jqcloud {
+	font-family: "Helvetica", "Arial", sans-serif;
+	font-size: 10px;
+	line-height: normal;
+	color: #09f;
+	overflow: hidden;
+	position: relative;
+}
+
+div.jqcloud a {
+	font-size: inherit;
+	text-decoration: none;
+	color: inherit;
+}
+
+div.jqcloud span {
+	padding: 0;
+}
+
+div.jqcloud span.vertical {
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: tb-rl;
+}
+
+div.jqcloud span.w10 {
+	font-size: 550%;
+	color: #0cf;
+}
+
+div.jqcloud span.w9 {
+	font-size: 500%;
+	color: #0cf;
+}
+
+div.jqcloud span.w8 {
+	font-size: 450%;
+	color: #0cf;
+}
+
+div.jqcloud span.w7 {
+	font-size: 400%;
+	color: #39d;
+}
+
+div.jqcloud span.w6 {
+	font-size: 350%;
+	color: #90c5f0;
+}
+
+div.jqcloud span.w5 {
+	font-size: 300%;
+	color: #90a0dd;
+}
+
+div.jqcloud span.w4 {
+	font-size: 250%;
+	color: #90c5f0;
+}
+
+div.jqcloud span.w3 {
+	font-size: 200%;
+	color: #a0ddff;
+}
+
+div.jqcloud span.w2 {
+	font-size: 150%;
+	color: #99ccee;
+}
+
+div.jqcloud span.w1 {
+	font-size: 100%;
+	color: #aab5f0;
+}
+
+/*----------------------------------------jquery.cloud end-----------------------------------*/
+	/*----------------------------------jquery.input start----------------------------------*/
+.selectInput {
+	position: relative;
+}
+
+.selectInput .pulldown {
+	width: 130px;
+	height: 28px;
+	line-height: 28px;
+	background: url(images/pullDown.gif);
+	padding-left: 5px;
+	cursor: pointer;
+}
+
+.selectInput .list {
+	width: 133px;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 27px;
+	background-color: #cfeaee;
+	border: #b4e1e7 solid 1px;
+	display: none;
+}
+
+.selectInput .list .item {
+	width: 128;
+	height: 25px;
+	line-height: 25px;
+	font-family: "微软雅黑";
+	border-bottom: #d8eff2 solid 1px;
+	padding-left: 10px;
+	overflow: hidden;
+}
+
+.selectInput .list .itemed {
+	cursor: pointer;
+	background-color: #d8eff2;
+}
+
+/*----------------------------------jquery.input end----------------------------------*/
+
+/*----------------------------------jquery.animate.layout start----------------------------------*/
+.cardCase
+{
+	width: 69px;
+	height: 69px;
+	border: 1px solid #d3d3d3;
+	background: #f7f7f7;
+	text-align: center;
+	line-height: 69px;
+	color: #000;
+	font-size:16px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+/*----------------------------------jquery.animate.layout end----------------------------------*/
+
+.uploadify {
+	position: relative;
+    float:left;
+}
+
+.uploadify-button {
+	background-color: #505050;
+	color: #FFF;
+	font: bold 12px;
+	text-align: center;
+	cursor: pointer;
+	clear: both;
+}
+
+.uploadify-button.disabled {
+	background-color: #D0D0D0;
+	color: #808080;
+}
+
+.uploadify-queue-item {
+	background-color: #F5F5F5;
+	font: 11px;
+	width: 80px;
+	padding: 10px;
+	margin-right: 5px;
+	height: 80px;
+	float: left;
+}
+
+.uploadify-error {
+	background-color: #FDE5DD !important;
+}
+
+.uploadify-queue-item .cancel a {
+	background: url('images/del.gif') 0 0 no-repeat;
+	float: right;
+	height: 16px;
+	text-indent: -9999px;
+	width: 16px;
+	clear: both;
+}
+
+.uploadify-queue-item.completed {
+	background-color: #E5E5E5;
+}
+
+.uploadify-progress {
+	background-color: #E5E5E5;
+	width: 100%;
+}
+
+.uploadify-progress-bar {
+	background-color: #0099FF;
+	height: 3px;
+	width: 1px;
+}

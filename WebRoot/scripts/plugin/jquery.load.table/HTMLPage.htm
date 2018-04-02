@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+    <title>表格控件实例</title>
+    <link href="../../../themes/plugin/jquery.outer.all.css" rel="stylesheet" type="text/css" />
+    <script src="../jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="../jquery.bgIframe/jquery.bgiframe.js" type="text/javascript"></script>
+    <script src="../jquery.tool/jquery.tool.js" type="text/javascript"></script>
+    <script src="../jquery.loading/jquery.loading.min.js" type="text/javascript"></script>
+    <script src="../jquery.pager.simple/jquery.pager.simple.js" type="text/javascript"></script>
+    <script src="../jquery.load.table/jquery.load.table.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            var tableA = $("#tableA"),
+                  pagerA = $('#pagerA');
+            tableA.loadTable({
+                param: {},
+                width: 950,
+                pager: pagerA,
+                id:'_m1',
+                rows: 'rows',
+                //                data: [{ "ID": "1", "Name": "苏脑1", "Path": "sun@s.con", "Code": "un@s.con", "Date": "13552486855" },
+                //                          { "ID": "2", "Name": "苏脑2", "Path": "sun@s.con", "Code": "un@s.con", "Date": "13552486855" },
+                //                          { "ID": "3", "Name": "苏脑3", "Path": "sun@s.con", "Code": "un@s.con", "Date": "13552486855" },
+                //                          { "ID": "4", "Name": "苏脑4", "Path": "sun@s.con", "Code": "un@s.con", "Date": "13552486855" },
+                //                          { "ID": "5", "Name": "苏脑5", "Path": "sun@s.con", "Code": "un@s.con", "Date": "13552486855" },
+                //                          { "ID": "6", "Name": "苏脑6", "Path": "sun@s.con", "Code": "un@s.con", "Date": "13552486855" },
+                //                          { "ID": "7", "Name": "苏脑7", "Path": "sun@s.con", "Code": "un@s.con", "Date": "13552486855"}],
+                columns: [{ caption: '选择', field: 'ID', type: 'checkbox' },
+                                { caption: '姓名', field: 'Name', type: 'string', width: '20%', style: 'cursor:pointer' },
+                                { caption: '邮箱', field: 'Path', type: 'string', width: '30%' },
+                                { caption: 'MSN', field: 'Code', type: 'string', width: '20%' },
+                                { caption: '手机', field: 'Date', type: 'string', width: '20%'}],
+                option: ['delete'],
+                //加载表格成功事件
+                onComplete: function (cb, This, refresh) {
+
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div id="tableA" style="width: 950px;">
+        aaaa
+    </div>
+    <div id="pagerA">
+        &nbsp;
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿@charset "utf-8";
+/* CSS Document */
+#spreadAnalysis{width:100%; height:auto}
+#spreadAnalysis .sp_analyse{width:860px;height:33px;line-height:33px; margin-left:10px;float:left; border:#e7e7e7 solid 1px;font-family:'Microsoft YaHei'}
+#spreadAnalysis .spreadAnalysis{padding:20px 0}
+.spreadAnalysis .rigntNow_analy{float:left;width:100px;height:35px; line-height:35px;background-color:#3ebac3;color:#fff; text-align:center; cursor:pointer; font-family:'Microsoft YaHei'; font-size:16px}
+.spreadAnalysis .rigntNow_analy:hover{background-color:#21afb9;}
+.spreadAnalysis .analy_what{float:left;margin-left:10px;width:35px;heigt:35px;line-height:35px; background:url(images/root.gif) no-repeat -0px -142px}
+#spreadAnalysis .cont_list .cont_do{margin-top:10px;margin-bottom:5px; height:25px;line-height:25px}
+#spreadAnalysis .rn_rightBotton{width:70px; height:25px; line-height:25px;margin-left:10px;color:#fff; text-align:center; cursor:pointer}
+#spreadAnalysis .rn_rightBotton1{background-color:#3ebac3}
+#spreadAnalysis .rn_rightBotton1:hover{ background-color:#21afb9}
+#spreadAnalysis .rn_rightBotton2{background-color:#d87c85}
+#spreadAnalysis .rn_rightBotton2:hover{ background-color:#D16570}
+/*sp_all*/
+.customer_cont .sp_allData{ color:#21afb9;margin-right:10px}
+.customer_cont .sp_cuBotton{width:70px; height:27px;line-height:27px;float:left; margin-right:10px; color:#fff;text-align:center; cursor:pointer}
+.customer_cont .sp_cuBotton a {color: #fff;}
+.customer_cont .sp_cuBotton a:hover {color: #fff;}
+.customer_cont .sp_cuBback1{ background-color:#3ebac3}
+.customer_cont .sp_cuBback1:hover{background-color:#21afb9}
+.customer_cont .sp_cuBback2{ background-color:#8ac836}
+.customer_cont .sp_cuBback2:hover{background-color:#7ab828}
+#sp_all .sp_allRight{ width:630px;height:80px;float:right;margin:10px; background-color:#fafafa; border:#ccc solid 1px;border-radius:0.5em; position:relative;padding:10px;}
+.sp_allRight .sp_tip{ width:20px; height:20px; background:url(images/Twitter.gif) no-repeat left -310px;position:absolute; left:-12px; top:40px}
+.sp_allRight .sp_allCount{width:630px; height:65px; line-height:20px;word-break:break-all;overflow:hidden}
+.sp_allRight p{width:630px;height:20px;line-height:20px;}
+.sp_allRight .sp_source{color:#21afb9; font:normal 12px "Microsoft YaHei"}
+.sp_allRight .sp_source:hover{color:#333; cursor:pointer}
+.sp_allRight .sp_inforSour span{float:left;margin-right:5px; font:normal 12px "Microsoft YaHei"}
+.sp_allRight .sp_numColor{color:#21afb9}
+#sp_all .qushi_Plist{width:690px;float:left}
+#sp_all .qushi_PlistStyle1{height:60px;overflow:hidden}
+#sp_all .qushi_PlistStyle2{height:auto;overflow:visible}
+.qushi_Plist dl{width:130px;height:50px;padding:5px 5px 5px 0;float:left}
+.qushi_Plist dt{float:left}
+.qushi_Plist dd{float:left;width:70px;height:20px;line-height:20px; overflow:hidden;margin:0 0 5px 5px;float:left; display:inline;font:normal 14px "Microsoft YaHei"}
+.qushi_Plist .dd_color{color:#21afb9}
+.dl_listMore{ width:80px;height:60px;line-height:60px;color:#21afb9;float:right; cursor:pointer}
+.dl_listMore:hover{color:#333}
+/*customer*/
+#sp_all .cus_left{width:335px; border:0}
+#sp_all .cus_left ul{width:220px;margin-top:0;}
+#sp_all .cus_left li{width:220px}

@@ -1,0 +1,122 @@
+﻿@charset "utf-8";
+/* CSS Document */
+#myHomePage{width:100%; height:auto}
+/*homePage top*/
+#send_news{float:left;width:1020px;position:relative;margin-bottom:10px;z-index:999}
+#send_news .myTw_show {width:1020px;background-color:#fff;float:left}
+#send_news .myTw_show .send_news{width:996px;_width:995px;height:100px; border:#E3E3E3 solid 2px;margin:20px 10px;margin-bottom:0;font:normal 14px "Microsoft YaHei";overflow:auto;resize: none;}
+#send_news .myTw_show  .send_news .news_content{ width:100%;height:60px;margin:5px}
+.send_do{width:1000px;margin:10px 0 10px 10px;height:35px;line-height:35px;position:relative;z-index:1000}
+.send_do .font_num{color:#21afb9;font:bold 16px "Microsoft YaHei";}
+.send_do .font_num2{color:#f00; font:bold 16px "Microsoft YaHei"}
+.send_do .font-tip{ position:absolute; right:10px ; top:-45px;}
+.send_do .send_left{float:left;}
+.send_do .send_left span{float:left;margin-right:5px; display:inline}
+.send_do .send_left span:hover{color:#21afb9; cursor:pointer}
+.send_do .send_left .s_pictures{position:relative; z-indx:900}
+.send_do .send_left .s_picPic{background:url(images/Twitter.gif) no-repeat 0 -25px;}
+.send_picClose{position:absolute; left:423px;top:35px;z-index:1100}
+.send_do .send_left .s_tips{ background:url(images/Twitter.gif) no-repeat 0 -57px;padding-left:25px}
+.send_do .send_left .spic_list{width:430px;height:120px;padding:30px 0 0 15px;border:#ccc solid 1px;background-color:#fafafa; position:absolute; left:0px; top:30px;}
+.send_do .spic_list .spic_listImgs{ width:100px;height:100px; float:left; border:#eee solid 1px}
+.send_do .spic_list .spic_ImgsAdd{ background:url(images/pic_add.gif) no-repeat}
+.send_do .spic_list .spic_ImgsAdd:hover{ background:url(images/pic_add.gif) no-repeat -100px 0; }
+.send_do .send_left .s_link{background:url(images/Twitter.gif) no-repeat 0 -91px;padding-left:25px; margin-left:10px;}
+.send_do .send_right{float:right;width:330px}
+.send_do .send_right .sel_num{float:left;width:80px;height:35px;line-height:35px;color:#333;margin-right:10px; display:inline}
+.send_do .send_right .sel_num label:hover{color:#21afb9; cursor:pointer}
+.send_do .send_right .select_senNum{ position:relative}
+.send_do .send_right .select_senNum:hover{color:#21afb9;cursor:pointer}
+.send_do .send_right .s_Rsel{width:60px;height:30px;padding-left:20px;background:url(images/Twitter.gif) no-repeat 0 -193px; float:left;}
+.send_do .send_right .sel_time{width:80px;float:left;height:20px;line-height:20px;float:left;margin:0;margin-top:7px;color:#333}
+.send_do .send_right .timing_selTime{float:left;margin-top:5px;_margin-top:0;*margin-top:0}
+.send_do .send_right  .send_back{float:right;width:80px; height:35px;line-height:35px; text-align:center; font-size:16px;font-weight:bold;color:#fff;cursor:pointer}
+.send_do .send_right  .send_over{background-color:#3ebdc6; }
+.send_do .send_right  .send_over:hover{background-color:#21afb9}
+.send_do .send_right  .send_fail{background-color:#D5D5D5; cursor:auto}
+.pl_countLsit{width:930px; height:auto; float:left}
+/*talk me*/
+/*.talkMe .send_selWay{width:1000px;margin:20px auto;}*/
+/*manage*/
+.cmanage_color{color:#21afb9;font-weight:bold;cursor:pointer}
+.publishManage .talkMe_count .manage_link{ color:#21afb9}
+.publishManage .talkMe_count .manage_link:hover{ text-decoration:underline}
+.publishManage .cont_doleft .manage_cSuccess{color:#53A9FF}
+.publishManage .cont_doleft .manage_success{color:#0074E8}
+.publishManage .cont_doleft .manage_fail{color:#f00}
+.publishManage .span_marL{margin-left:20px}
+.publishManage .cont_list{border:#eee solid 1px}
+.publishManage .cont_list h2{width:990px;padding:0 5px; overflow:hidden;background-color:#eee; font:normal  14px "Microsoft YaHei"}
+.publishManage  h2 span{height:40px;line-height:40px;margin-left:5px;float:left}
+.publishManage .cont_list .send_zhao{ width:84px;margin:0;margin-right:10px;white-space:nowrap;overflow:hidden}
+.publishManage .cont_list .send_photo{ width:25px;height:20px; background:url(images/zhao_select.gif) no-repeat;margin-top:12px; position:relative}
+.publishManage .cont_list .send_photo2{ width:25px;height:20px; background:url(images/zhao_select.gif) no-repeat 0 -22px;margin-top:12px; position:relative}
+.publishManage .cont_list .send_photo3{ width:25px;height:20px; background:url(images/zhao_select.gif) no-repeat 0 -42px;margin-top:12px; position:relative}
+.publishManage .cont_list .taikMe_List{width:980px;padding:0 10px;}
+.publishManage .talkMe_count{width:958px;margin-top:5px;position:relative}
+.yuanc_title{width:980px;font-size:16px; font-weight:normal;word-break: break-all; word-wrap:break-word;}
+.yuanc_tMar{margin-top:5px}
+.yuanc_title img{margin-right:5px; border:#eee solid 1px}
+.talkMe_count .yuanc_title{width:958px;font-size:14px} 
+.publishManage .cont_do{width:980px;padding:0 10px;margin:5px 0 0 0}
+.cont_list .send_style{width:600px}
+.cont_list .send_cont1{height:40px;overflow:hidden}
+.cont_list .send_cont2{height:auto;overflow:visible}
+.publishManage .cont_list .send_showMore{width:30px;height:40px;line-height:40px;float:right;font-weight:bold;text-align:center; color:#21afb9; font-size:20px; cursor:pointer}
+.publishManage .cont_list .send_showMore:hover{color:#333}
+/*manage change*/
+.manage_change{width:600px; margin:0 auto; background-color:#fff; height:auto}
+.manage_change .manage_content{ height:100px; width:580px;margin-left:10px; font-family:"Microsoft YaHei"; font-size:14px}
+.manage_change .send_do{width:583px;padding-bottom:20px}
+.manage_change .send_do .send_right{width:240px}
+/*send fail or secuss*/
+.publishManage  h2 .manageSend_style{width:20px;height:20px;position:absolute; top:5px;right:-6px}
+.publishManage  h2 .manageSend_fail{ background:url(images/or.gif) no-repeat 0 -43px}
+.publishManage  h2 .manageSend_sucess{background:url(images/or.gif) no-repeat 0 -3px }
+.publishManage  h2 .manageSend_ding{background:url(images/or.gif) no-repeat 0 -23px }
+/*dataAnalysis*/
+.dataAnalysis{border:#eee solid 1px}
+#dataAnalysis .dataAnaly_left{float:left;margin-left:10px;margin-right:0}
+#dataAnalysis .ana_selBotton{margin-top:12px;}
+#dataAnalysis .send_selWay{width:1000px;margin:20px 0 0 10px;}
+#dataAnalysis .news_type span{float:left;}
+#dataAnalysis h4{height:25px;line-height:25px;width:100%;border-bottom:#ccc solid 1px; font:bold 14px "Microsoft YaHei"}
+#dataAnalysis .news_type .ana_mar{margin-left:20px;}
+.tj_show ul{width:100%;float:left}
+.imp_word li{height:30px;line-height:30px; text-align:left;width:220px;margin:20px 0 0 10px;cursor:pointer;padding-left:10px;float:left; overflow:hidden}
+.imp_word li  a{float:left;color:#fff;padding:0 10px; font-family:"Microsoft YaHei"}
+.each_other  li{height:25px;line-height:25px;padding:4px 0;_padding-top:0;border-bottom:#ccc dashed 1px}
+.each_other  li span{ float:left;}
+.each_other  li .each_num{width:20px;height:20px;line-height:20px;margin:5px 10px 0 0; text-align:center;color:#fff; background-color:#ccc;}
+.each_other  li .top_three{background-color:#f00;}
+.each_other  li .each_photo{width:25px;height:25px;padding-top:3}
+.each_other  li .each_allNum{float:right;margin-right:20px;}
+
+/*my review*/
+.myreview_reply{width:900px;}
+.myreview_reply .relay_count,.myreview_reply .send_do{width:870px;}
+#myReview_main .talkMe_count{width:918px;margin-top:0}
+#myReview_main .cont_list{padding-bottom:5px}
+#myReview_main  .taikMe_List .talkMe_count{ position:static}
+#myReview_main .relay{margin-left:0;width:918px; position:relative}
+#myReview_main .reTitle_width{width:885px}
+#myReview_main .relay_count{width:889px;font-size:14px}
+#myReview_main .send_do{width:891px}
+#myReview_main .timing_close{ position:absolute;right:5px;top:5px}
+/*analyse customer pingtai*/
+.customer_cont{width:100%;height:120px;margin-bottom:10px;background-color:#fff}
+.cus_left,.cus_right{ float:left; margin:10px;_margin:8px;overflow:hidden}
+.cus_left {width:500px;margin-right:0px; border-right:#ccc solid 1px}
+.cus_left .cus_photo{width:100px;height:100px;float:left;border:#ccc solid 1px;}
+.cus_left ul{float:left;width:350px;margin-left:10px; display:inline}
+.cus_left ul li{float:left;height:25px;line-height:25px; font:normal 14px "Microsoft YaHei"}
+.cus_left ul .li_weight{font:bold  14px "Microsoft YaHei"}
+.cus_left .li_weight a{font-weight:normal;color:#21afb9}
+.cus_left .li_weight a:hover{color:#333; cursor:pointer}
+.cus_left li .cus_jbTips{ width:20px; height:25px; background:url(images/Twitter.gif) no-repeat 0 -134px;}
+.cus_left ul .cus_cout{width:310px;height:40px;overflow:hidden}
+.middle_table{width:400px;border-collapse:collapse;margin-left:10px}
+.middle_table th,.middle_table td{height:47px;line-height:47px;width:130px;}
+.middle_table th{font-family:"Microsoft YaHei";background-color:#db6969;color:#fff;border:#fafafa solid 1px;  text-align:center;}
+.middle_table td{font-family:"Microsoft YaHei";background-color:#eee; border:#fff solid 1px; text-align:center;}
+.cus_right{margin-left:40px;display:inline}

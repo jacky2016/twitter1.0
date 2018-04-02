@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <link rel="stylesheet" href="../jquery.loadList/common.css" type="text/css" />
+    <link rel="stylesheet" href="../jquery.loadList/PushCT.css" type="text/css" />
+    <script type='text/javascript' src='../../dwr/engine.js'></script>
+    <script type='text/javascript' src='../../dwr/util.js'></script>
+    <script type='text/javascript' src='../../dwr/interface/TaskSubscriber.js'></script>
+    <script type="text/javascript" src="../libs/jquery-1.6.4.js"></script>
+    <script type="text/javascript" src="../jquery.tools/jquery.tool.js"></script>
+    <script type="text/javascript" src="../jquery.windows/jquery.Windows.js"></script>
+    <script type="text/javascript" src="../jquery.taskPicker/jquery.taskPicker.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.ss').showWin({
+                position: "Center",
+                css: { "width": "636px", "height": "281px", "background-color": "#F2F2F2" },
+                title: '任务选择',
+                content: '<div class="pushct taskPicker"><div class="left"></div><div class="right"><ul class="taskselect"></ul><div class="selected"><span>已选择：</span><ul></ul></div><p class="button"><span class="CM_cancel">取消</span><span class="CM_OK">确定</span><span class="clear">清空</span></p></div></div>',
+                id: 'tuisong',
+                layer: true,
+                close: function () { },
+                loadSucceed: function (id) {
+                    id.find('.taskPicker').taskPicker({
+                        url: TaskSubscriber,
+                        methodName: 'queryCatalogTasks',
+                        okSucceed: function (delObj) {
+                            alert(delObj.size());
+                        },
+                        cancelSucceed: function () {
+                            id.hide();
+                            $.remove({ obj: "#_layer" });
+                        }
+                    });
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="ss">
+        选中任务
+    </div>
+</body>
+</html>

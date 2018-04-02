@@ -1,0 +1,73 @@
+﻿@charset "utf-8";
+/* CSS Document */
+#portal{width:1260px;margin:0 auto;overflow:hidden;border-right:#fff solid 1px;position:relative;font:normal 14px "微软雅黑"}
+/*logo userSet tips*/
+#logo{width:100%; height:60px;background:url(images/logo.jpg) no-repeat}
+#logo div{float:right}
+#logo .l_user{height:30px;line-height:30px;width:154px;margin:15px 10px 0 0; color:#eee;cursor:pointer;padding:0 10px;margin-right:10px;position:relative;z-index:10000; display:inline}
+#logo .l_user span{float:left}
+#logo .l_user .U_set{width:10px;height:30px;background:url(images/logo_set.gif) no-repeat -5px -14px}
+#logo .l_user .user_name{width:100px; word-break:keep-all;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#logo .l_user ul{width:172px;height:120px; background-color:#525252; position:absolute; left:0; top:30px;z-index:999} 
+#logo .l_user li{width:110px;margin:10px auto;height:25px;line-height:25px;color:#fff;padding-left:20px;border-bottom:#ccc solid 1px;font-family:"微软雅黑"}
+#logo .l_user li:hover{color:#23c1cc}
+#logo .l_user .set_list1{ background:url(images/logo_set.gif) no-repeat 0 -75px}
+#logo .l_user .set_list2{ background:url(images/logo_set.gif) no-repeat 0 -100px}
+#logo .l_user .set_list3{ background:url(images/logo_set.gif) no-repeat 0 -124px}
+#logo .U_tips{width:30px;height:30px;margin-top:15px;position:relative}
+#logo .l_tip{background:url(images/logo_set.gif) no-repeat 8px -186px;margin-right:10px; display:inline;cursor:pointer}
+#logo .l_say{background:url(images/logo_set.gif) no-repeat 6px -152px;margin-right:5px;cursor:pointer}
+#logo .l_tip2{background:url(images/logo_set.gif) no-repeat -18px -186px;margin-right:10px; display:inline;cursor:pointer}
+#logo .l_say2{background:url(images/logo_set.gif) no-repeat -20px -152px;margin-right:5px;cursor:pointer}
+#logo .l_Num{width:18px;height:20px; text-align:center;line-height:20px; position:absolute;left:15px; top:-5px;color:#fff;line-height:20px;font:normal 12px "微软雅黑";}
+#logo .l_tipNum{background:url(images/logo_set.gif) no-repeat 0 -224px}
+#logo .l_sayNum{background:url(images/logo_set.gif) no-repeat 0 -249px}
+/*main*/
+#all_main{float:left;background:url(images/navi_back2.gif) repeat-y;height:auto;}
+/*left navi*/
+#navi{width:200px;float:left;min-height:600px;overflow:hidden}
+#navi ul {overflow:hidden;width:200px}
+#navi li{line-height:50px;_height:50px;overflow:hidden;_overflow:inherit;background:url(images/navi_back1.gif) no-repeat -203px 0;margin-bottom:1px;cursor:pointer;vertical-align: bottom;}
+#navi li:hover{background:url(images/navi_back1.gif) no-repeat;}
+#navi .in_liBack{background:url(images/navi_back1.gif) no-repeat;}
+#navi li a{float:left;height:50px;width:200px;overflow:hidden;color:#fff;font:normal 16px "微软雅黑"; font-weight:bold; cursor:pointer}
+#navi li a span{float:left;height:50px;line-height:50px;}
+#navi a .li_title{width:50px;height:50px;margin-right:30px;}
+#navi a .li_homePage{ background:url(images/navi_title.gif) no-repeat 0 2px;}
+#navi a .li_myTwitter{ background:url(images/navi_title.gif) no-repeat 0 -50px;}
+#navi a .li_twitterPubSentiment{ background:url(images/navi_title.gif) no-repeat 0 -102px;}
+#navi a .li_eventMonitor{ background:url(images/navi_title.gif) no-repeat 0 -150px;}
+#navi a .li_accountMonitor{ background:url(images/navi_title.gif) no-repeat 0 -203px;}
+#navi a .li_spreadAnalysis{ background:url(images/navi_title.gif) no-repeat 0 -257px;}
+#navi a .li_coordination{ background:url(images/navi_title.gif) no-repeat 0 -307px;}
+#navi a .li_alertService{ background:url(images/navi_title.gif) no-repeat 0 -357px;}
+#navi a .li_sysManager{ background:url(images/navi_title.gif) no-repeat 0 -405px;}
+#navi a .sec_tipBack{width:110px;background:url(images/Twitter.gif) no-repeat right -417px;}
+#navi a .sec_tipBack2{width:110px;background:url(images/Twitter.gif) no-repeat right -455px;}
+#navi li dl{width:100%;overflow:hidden;}
+#navi li dd{width:120px;padding-left:80px; background:url(images/sNavi_bsck.gif) no-repeat;font-family:"微软雅黑";height:40px;line-height:40px;border-bottom:#fff solid 1px;color:#fff}
+#navi li dd:hover{background-color:#3acdd8; background:url(images/sNavi_bsck.gif) no-repeat 0 -36px;}
+#navi li .sec_navColor{background-color:#3acdd8;background:url(images/sNavi_bsck.gif) no-repeat 0 -36px;}
+/*main and rightplace navi and mokuai set*/
+#main_box{width:1059px;float:left;background:url(images/main_back.gif) repeat;min-height:680px;padding-bottom:10px}
+#main_box .navi_tip{width:1020px;height:30px;line-height:30px;margin:8px 0 12px 20px;_margin-bottom:8px}
+.navi_tip .in_span{ float:left;width:40px;height:34px;line-height:34px; background:url(images/MbNavi.gif) no-repeat}
+.navi_tip .in_secSpan{float:left;width:110px;text-align:center;height:34px;color:#8C8C8C; font-weight:bold;line-height:34px; background:url(images/MbNavi.gif) no-repeat 0 -36px;cursor:pointer}
+.navi_tip .in_secSpan:hover{color:#21afb9}
+#main_box .content_box{width:1020px; height:auto;margin:0px auto}
+/*personal set*/
+.person_set{width:360px;_width:280px;height:auto;overflow:hidden}
+.person_set h3{border-bottom:#333 solid 1px; font:bold 14px "微软雅黑"}
+.person_set h3 span{color:#21afb9}
+.person_set .p_setList{ width:240px;margin:0 auto; overflow:hidden}
+.person_set .p_setList li{height:28px;line-height:28px;margin-top:10px;cursor:pointer;cursor:auto}
+.person_set .p_setList label,.person_set .p_setList input{float:left;height:25px;line-height:25px;_height:22px;font-family:"微软雅黑"}
+.person_set .p_setList label{width:70px;}
+.person_set .p_setList input{width:150px; border:#e1e1e1 solid 1px}
+.person_set .p_setList .per_changePassWord{color:#21afb9;font-family:"微软雅黑";cursor:pointer; margin-left:70px}
+.person_set .p_setList .per_changePassWord:hover{color:#333}
+.person_set .count_root{width:234px;_width:240px}
+/*root*/
+#root{ width:100%; height:32px; text-align:center}
+#root .right_root{width:1063px;float:left; height:32px;line-height:33px;color:#fff; background:url(images/root.gif) 0 -42px repeat-x ;}
+#root .left_root{width:196px; height:32px; float:left;background:url(images/root.gif) 0 -84px repeat-x }

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../../../themes/plugin/jquery.outer.all.css" rel="stylesheet" type="text/css" />
+    <script src="../jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="../jquery.bgIframe/jquery.bgiframe.js" type="text/javascript"></script>
+    <script src="../jquery.tool/jquery.tool.js" type="text/javascript"></script>
+    <script src="../jquery.regExp/jquery.regExp.js" type="text/javascript"></script>
+    <script src="../jquery.tool.date/jquery.tool.date.js" type="text/javascript"></script>
+    <script src="jquery.datePicker.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            var date = new Date(),
+                  min = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + (date.getDate()),
+                  max = date.getFullYear() + "-" + (date.getMonth() + 4) + "-" + (date.getDate());
+            $("#tt").datePick({
+                inputTwoObj: $("#t2"),
+                append: TE
+            });
+            $("#t2").datePick({
+                addDay: 1,
+                inputOneObj: $("#tt"),
+                month: 2
+            });
+        })
+
+    </script>
+</head>
+<body>
+    <div style="width: 50%; height: 400px; border: 1px solid red;">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+  
+        <input id="tt" type="text" value="" />
+        <input id="t2" type="text" value="" />
+        <br />
+        <br />
+        <br />
+        <select>
+            <option>fsdfdsf</option>
+            <option>fsdfdsf</option>
+            <option>fsdfdsf</option>
+            <option>fsdfdsf</option>
+        </select>
+        <br />
+    </div>
+</body>
+</html>

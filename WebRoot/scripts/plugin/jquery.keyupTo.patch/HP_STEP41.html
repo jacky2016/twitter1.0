@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <link href="../../../themes/plugin/jquery.outer.all.css" rel="stylesheet" type="text/css" />
+    <link href="common.css" rel="stylesheet" type="text/css" />
+    <link href="HP_SET.css" rel="stylesheet" type="text/css" />
+    <script src="../jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="../jquery.bgIframe/jquery.bgiframe.js" type="text/javascript"></script>
+    <script src="../jquery.tool/jquery.tool.js" type="text/javascript"></script>
+    <script src="../jquery.loading/jquery.loading.min.js" type="text/javascript"></script>
+    <script src="../jquery.load.list/jquery.load.list.js" type="text/javascript"></script>
+    <script src="../jquery.keyupTo/jquery.keyupTo.js" type="text/javascript"></script>
+    <script src="jquery.patch.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.areasift').patch({
+                width: 390,
+                url: '../../jQuery/jquery.keyupTo.patch/json.aspx/GetInfo',
+                param: { "value": "{0}" },
+                rows: '',
+                templates: [{ html: '<li key="{0}"' },
+                                  { html: ' text="{0}" >' },
+                                  { html: '<span class="pName">所属地：{0}</span>' },
+                                  { html: '<span class="name">{0}</span></li>'}],
+                columns: [{ field: 'ID' },
+                                { field: 'Name' },
+                                { field: 'Path' },
+                                { field: 'Name'}],
+                id: 'patch1'
+            });
+
+        })
+    </script>
+</head>
+<body>
+    <div class="HP_FOUR">
+        <div class="region">
+            <div class="titleN">
+                地域来源筛选</div>
+            <div class="region_right">
+                <input name="" type="text" class="areasift" /><div class="addC">
+                    添加</div>
+                <ul class="selectUL">
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                    <li>
+                        <input name="" type="checkbox" value="" />
+                        北京</li>
+                </ul>
+                <div class="clearM">
+                    清除备选项</div>
+            </div>
+        </div>
+        <div class="authorC">
+            <div class="titleN">
+                作者筛选</div>
+            <input name="" type="text" />
+            <p>
+                使用空格分隔作者姓名（如&nbsp;&nbsp;张三&nbsp;&nbsp;李四）</p>
+        </div>
+        <div class="btmB">
+            <div class="CM_cancel">
+                上一步</div>
+            <div class="CM_OK">
+                完成设置</div>
+        </div>
+    </div>
+</body>
+</html>

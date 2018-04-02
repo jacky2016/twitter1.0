@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>div边角样式</title>
+    <link href="test.css" rel="stylesheet" type="text/css" />
+
+    <script src="../jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="../jquery.tool/jquery.tool.js" type="text/javascript"></script>
+    <script src="jquery.corner.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            //设置圆角边
+            //$(".divIndo").corner('5px');
+            //设置带边框的圆角边
+            $(".divIndo").corner("5px").parent().corner("5px");
+            $(".divIndo").show();
+        })
+    </script>
+</head>
+<body>
+    <div class="div3_p">
+        <div id="div1" class="divIndo" style=" display:none;">
+            asdadasd
+        </div>
+    </div>
+    <div class="div3_p">
+        <div id="div2" class="divIndo">
+            dfdfdf
+        </div>
+    </div>
+    <div class="div3_p">
+        <div id="div3" class="divIndo">
+            dfdfdf
+        </div>
+    </div>
+</body>
+</html>

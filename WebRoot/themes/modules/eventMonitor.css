@@ -1,0 +1,38 @@
+﻿@charset "utf-8";
+/* CSS Document */
+#event{width:100%; height:auto}
+/*eventAnalyse*/
+#eventAnalyse{width:1020px;height:auto;margin-bottom:10px}
+#eventAnalyse .send_selContent .news_type span{float:left;margin:0 10px;}
+#eventAnalyse .send_selContent  h4{height:25px;line-height:25px;width:100%;border-bottom:#ccc solid 1px; font:bold 14px "微软雅黑"}
+#eventAnalyse .send_selContent .news_type .ana_mar{margin-left:20px;}
+#eventAnalyse .send_selWay .news_type span{margin:0 10px;}
+#eventAnalyse .send_selWay .news_type .ana_selBotton{margin:12px 10px 0 20px; cursor:pointer}
+#eventAnalyse .send_selWay .news_type .ana_selBotton:hover{ background:url(images/yq_img.gif) -66px -2px}
+#eventAnalyse .ana_resShow{ width:100%;float:left}
+#eventAnalyse .ana_resShow ul{margin-left:10px;_margin-left:2px;}
+#eventAnalyse .event_hotWord .event_hotCount{ width:300px}
+.event table .event_numBack{width:20px;height:20px; line-height:20px; float:left; margin:0 auto; background-color:#f00;color:#fff;text-align:center}
+.event table .event_numBack2{width:20px;height:20px;float:left; line-height:20px;   margin:0 auto; background-color:#ccc;color:#fff;text-align:center}
+
+#event_details{width:1020px; overflow:hidden}
+#event_details h1 span{margin-left:10px}
+ 
+/*yujing*/
+.warning_up{width:320px;height:auto}
+.warn_style{width:320px;height:auto;line-height:25px;position:relative;z-index:999;}
+.warning_up .mynum_list {margin:2px 0 0 0;float: left;width: 155px; position:static}
+.warning_up .mynum_list h2{padding-left:10px; background-color:#fff; border:#ccc solid 1px;width:130px;}
+.warning_up .mynum_list ul {width:140px;max-height:140px;_height:130px;overflow:auto;position:absolute;top:29px;left:100px;z-index:1000}
+.warning_up .mynum_list ul li{ padding-left:0px;width:100px; margin:0 auto}
+.warning_up .mynum_list li input{margin:0 5px;}
+
+/***/
+.event_xqSel .news_type .ana_select{width:95px;}
+.event_xqSel .selectInput .pulldown{width:131px;}
+.event_xqSel .selectInput .list{width:131px;}
+
+.warning_up .more_doExp .mynum_list{margin:3px 0 0 0}
+.web_table  .cont_photoMar{height:54px;margin:5px 5px 5px 0px;*margin:-28px 5px 5px 0px;}
+.web_table .com_none{display:none}
+

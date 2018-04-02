@@ -1,0 +1,243 @@
+<!--accountMonitor -->
+<div id="accountMonitor">
+	<div id="accountMonitor_main">
+		<div class="talkMe event" id="account_talkMe">
+			<div class="send_content">
+				<h1>
+					<span class="zhao_change span_title zhao_back">新浪</span>
+					<span class="zhao_change span_title">腾讯</span>
+					<!--<span class="zhao_change span_title">人民</span>-->
+					<span class="event_import" id="event_import"></span>
+					<!-- <span class="event_add imp_liRight" id="eventadd"></span> -->
+					{pmi:zhjc_adddata_1}
+				</h1>
+				<div class="send_selContent" id="listdiv">
+			    </div>
+		    </div>
+			<div class="com_clear"></div>
+			<div id="allPager" class="page_content"></div>
+			
+		</div>
+
+		<!--dataAnalysis-->
+			<div class="com_clear"></div>
+			<!--send content-->
+			<div class="send_content event com_none" id="account_analy">
+				<h1>
+					<span class="zhao_change zhao_back sp_anaLeft">实时监测</span>
+					<!--<span class="zhao_change sp_anaLeft">趋势分析</span>-->
+					<span class="zhao_change sp_anaLeft">粉丝分析</span>
+					<span class="zhao_change sp_anaLeft">博文分析</span>
+				
+					<span class="imp_liRight font-color" id="imp_liRight"></span>
+				</h1>
+				
+				<!--shishijiance  实时监测-->
+				<div class="send_selContent com_none" id="realtime_analy">
+					<div class="send_selContent" id="analydiv">
+			    	</div>
+					<div class="send_selWay">
+						<div class="news_type">
+							<span>趋势分析图：</span>
+							<div class="selW_selected job_list" id="hour_24">
+								今天
+							</div>
+							<div class="job_list" id="day_7">
+								最近7天
+							</div>
+							<div class="job_list" id="day_30">
+								最近30天
+							</div>
+							<div class="data_type">
+                            <input type="radio" name="acc_radion" class="acData_sel2" id="acc_weibo" checked="checked" value="1"/><label class="acData_sel" for="acc_webo">微博数</label>
+                            <input type="radio" name="acc_radion" class="acData_sel2" id="acc_reply" value="2"/><label class="acData_sel" for="acc_relay">转发数</label>
+                          </div>
+						</div>
+					</div>
+					<div class="com_clear"></div>
+					<div class="qushiAna_cont tj_show" id="likeWeekLine">
+					
+					</div>
+					<div class="com_clear"></div>
+				</div>
+				<div class="com_clear"></div>
+				<!--qushifenxi 趋势分析-->
+				<!--
+				<div class="send_selContent com_none" id="trend_analy">
+					<div class="send_selWay">
+						<div class="news_type" id="zf_type">
+							<span>转发数：</span>
+							<div class="selW_selected job_list">
+								今天
+							</div>
+							<div class="job_list">
+								昨天
+							</div>
+							<div class="job_list">
+								最近7天
+							</div>
+							<div class="job_list">
+								最近30天
+							</div>
+						</div>
+					</div>
+					<div class="com_clear"></div>
+					<div class="qushiAna_cont tj_show" id="likeLine_zf">
+					    
+					</div>
+					<div class="com_clear"></div>
+					<div class="send_selWay">
+						<div class="news_type" id="pl_type">
+							<span>评论数：</span>
+							<div class="selW_selected job_list">
+								今天
+							</div>
+							<div class="job_list">
+								昨天
+							</div>
+							<div class="job_list">
+								最近7天
+							</div>
+							<div class="job_list">
+								最近30天
+							</div>
+						</div>
+					</div>
+					<div class="com_clear"></div>
+					<div class="qushiAna_cont tj_show" id="likeLine_pl">
+					
+					</div>
+				</div>
+				<div class="com_clear"></div>-->
+				<!--fensianalyse  粉丝分析-->
+				<div class="send_selContent com_none" id="fans_analy">
+					<!-- 
+					<div class="send_selWay">
+						<div class="news_type">
+							<div class="selW_selected job_list">
+								转发用户
+							</div>
+							<div class="job_list">
+								评论用户天
+							</div>
+						</div>
+					</div> -->
+					<div class="fensiAna_cont1 tj_mar">
+						<h4>
+							认证比例
+						</h4>
+						<div id="fans_rz" class="tj_show">
+						</div>
+					</div>
+					<div class="fensiAna_cont1 tj_mar" >
+						<h4>
+							性别比例
+						</h4>
+						<div id="fans_sex" class="tj_show">
+						</div>
+					</div>
+					<div class="com_clear"></div>
+					<div class="fensiAna_cont1">
+						<h4>
+							用户粉丝数
+						</h4>
+						<div id="fans_num" class="tj_show">
+						</div>
+					</div>
+					<div class="fensiAna_cont1">
+						<h4>
+							粉丝最多的用户排行
+						</h4>
+						<div class="each_other tj_show" id="fsFans">
+							
+						</div>
+					</div>
+					<div class="com_clear"></div>
+					<div class="qushiAna_cont">
+						<h4>
+							地域分析
+						</h4>
+						<div id="terrain_analy" class="tj_show">
+						</div>
+					</div>
+				</div>
+				<div class="com_clear"></div>
+				<!--bowenfenxi  博文分析-->
+				<div class="send_selContent tj_mar com_none" id="post_analy">
+					<!--
+					<div class="send_selWay">
+						<div class="news_type">
+							<div class="selW_selected job_list">
+								日期分布
+							</div>
+							<div class="job_list">
+								时段分布
+							</div>
+						</div>
+					</div>
+					<div class="com_clear"></div>
+					<div class="qushiAna_cont tj_show" id="post_fb">
+					</div>
+					<div class="com_clear"></div>
+					<div class="fensiAna_cont1">
+						<h4>
+							最近30天@提到我的
+						</h4>
+						<div class="tj_show">
+							<img src="themes/modules/images/account1.gif" width="500"
+								height="360" />
+						</div>
+					</div>
+					<div class="fensiAna_cont1">
+						<h4>
+							最近30天我转发最多
+						</h4>
+						<div class="tj_show">
+							<img src="themes/modules/images/account1.gif" width="500"
+								height="360" />
+						</div>
+					</div>
+					<div class="com_clear"></div>
+					-->
+					<div class="qushiAna_cont">
+						<h4>
+							30天热门微博
+						</h4>
+						<div class="send_selContent" id="postdiv">
+			    		</div>
+					</div>
+				</div>
+			</div>
+			<div class="com_clear"></div>
+		<!--account details-->
+		<div id="account_details" class="com_none">
+			<!--send content-->
+			<div class="send_content">
+				<h1>
+					<span class="com_fLeft font-color" id="com_fleft"></span>
+				</h1>
+				<div class="send_selWay event_xqSel" style="border:#d9edf6 solid 1px">
+					<div class="news_type">
+						<span class="sel_title">从</span>
+						<input type="text" class="ana_select" id="dateStart"/>
+						<span class="sel_title">到</span>
+						<input type="text" class="ana_select" id="dateEnd"/>
+						<span class="sel_title">关键词：</span>
+						<input type="text" class="ana_select" id="gjkey"/>
+						<span class="ana_selBotton doBotton_mar" id="but_search"></span>
+						 <div class="com_clear"></div>
+					</div>
+				</div>
+				<div class="com_clear"></div>
+				<div class="send_selContent listItem" id="accountdiv">
+	
+				</div>
+			</div>
+			<div class="com_clear"></div>
+			<!--pages-->
+			<div id="datesPager" class="page_content">
+			</div>
+		</div>
+		<!--accounttails end-->
+	</div>
+	<!--account end-->

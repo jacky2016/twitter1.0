@@ -1,0 +1,37 @@
+﻿@charset "utf-8";
+/* CSS Document */
+#examineManager{width:1020px; height:auto;}
+#examineManager .event_num{ width:200px}
+#examineManager .coor_count .event_num{ width:93px}
+/*coor add*/
+.coor_add{width:370px;height:auto;}
+.coor_tableBox{width:370px;_width:360px;height:130px;overflow:auto; float:left;margin-top:5px;}
+.coor_add .coor_table{width:100%;float:left;margin:0}
+/*new tongzhi*/
+.new_tongzhi{width:460px; height:auto}
+.new_tongzhi .box_count  .div_mar{margin-top:10px;height:auto;}
+/*select pingtai*/
+.sel_pingtai{width:370px; height:auto}
+.new_tongzhi .tongzhi_content{width:403px; height:80px; border:#ccc solid 1px;float:left;font-family:"Microsoft YaHei"; font-size:14px}
+ #taskNofity_add  .push_showList{width:400px;overflow:auto;max-height:130px;_height:130px;margin:10px 0; margin-left:56px;border-top:#ccc solid 1px;border-bottom:#ccc solid 1px}
+/*tongzhi content*/
+.tongzhi_content{width:400px; height:auto}
+.tongzhi_content .all_content{padding:5px;border:#ccc solid 1px;line-height:25px; overflow:hidden;min-height:100px}
+.tongzhi_content .all_content img{margin-right:5px}
+/*addZhao*/
+.new_tongzhi .addZhao{width:207px;margin-left:10px;}
+/*all wangpingyuan*/
+#examineManager .allwpy_show{float:right;height:30px;line-height:30px;color:#ffffff;background-color:#3EBAC3;margin-top:10px;padding:0 5px}
+#examineManager .allwpy_show:hover{ background-color:#21afb9;cursor:pointer}
+/*coor manage*/
+#dealwithCommentCount_list  .talkMe_count{margin-bottom:10px}
+#dealwithCommentCount_list  .relay{margin:0;width:915px}
+#dealwithCommentCount_list  .myreview_reply .relay_count ,#examinemanager_ChangePageShow .myreview_reply .send_do{width:885px;}
+/*coor myReviews*/
+#contentsCommentCount_list .talkMe_count{width:918px;margin-top:0;margin-bottom:5px;position:static}
+#contentsCommentCount_list .relay{margin-left:0;width:918px}
+#contentsCommentCount_list .reTitle_width{width:885px}
+#contentsCommentCount_list .relay_count{width:889px;font-size:14px}
+#contentsCommentCount_list .send_do{width:891px} 
+
+

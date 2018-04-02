@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>时间选择器插件</title>
+    <link href="../../../themes/plugin/jquery.outer.all.css" rel="stylesheet" type="text/css" />
+    <script src="../jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="../jquery.tool/jquery.tool.js" type="text/javascript"></script>
+    <script src="../jquery.regExp/jquery.regExp.js" type="text/javascript"></script>
+    <script src="jquery.timePicker.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.aa').timePicker({
+                id: 'aa',
+                obj: $('#a')
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="aa">
+    </div>
+    <input id="a" type="text" />
+</body>
+</html>

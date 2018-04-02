@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../jquery.public.css" rel="stylesheet" type="text/css" />
+    <link href="../jquery.windows/jquery.windows.css" rel="stylesheet" type="text/css" />
+    <link href="jquery.windows.messageBox.css" rel="stylesheet" type="text/css" />
+    <script src="../jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="../jquery.tool/jquery.tool.js" type="text/javascript"></script>
+    <script src="../jquery.bgIframe/jquery.bgiframe.js" type="text/javascript"></script>
+    <script src="../jquery.windows/jquery.windows.js" type="text/javascript"></script>
+    <script src="jquery.windows.messageBox.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#aaa')[EV](CK, function () {
+                $.messageBox({
+                    content: '我是警告你我是警告你我是警告你我是警',
+                    type: 1,
+                    onAffirm: function (state) {
+                        alert(state);
+                    }
+                });
+            })
+        })
+    </script>
+</head>
+<body>
+    <span id="aaa">提示 </span>
+</body>
+</html>

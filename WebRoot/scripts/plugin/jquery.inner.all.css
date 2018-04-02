@@ -1,0 +1,849 @@
+﻿body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, table, td, th, form, fieldset, img, dl, dt, dd
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+img
+{
+	border: none;
+}
+li
+{
+	list-style: none;
+}
+body
+{
+	font-size: 12px;
+}
+.jquery_loading
+{
+	display: block;
+	margin: 0 auto;
+	width: 50px;
+	height: 50px;
+	background: url(images/loading.gif) no-repeat center center;
+}
+.jquery_hover
+{
+	background: #ccc;
+}
+
+.jquery_nothing
+{
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	font-weight: bold;
+}
+.jquery_clear
+{
+	clear:left;
+}
+#_layer
+{
+	background-color: red;
+	display: none;
+	z-index: 3;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#_wait
+{
+	display: none;
+	z-index: 1004;
+	background-color: #fff;
+	min-width: 120px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: red;
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	font-size: 20px;
+	padding: 4px;
+}
+.divTips, .divTipsAuto
+{
+	height: 14px;
+	line-height: 14px;
+	font-size: 12px;
+	background-color: #fff;
+	border: 1px solid black;
+	color: Green;
+	position: absolute;
+	padding: 2px;
+	text-align: center;
+	display: none;
+	z-index: 9999;
+}
+
+/*----------------------------------------jquery.timePicker start-----------------------------------*/
+.timePicker .left
+{
+	border: 1px solid #ccc;
+	float: left;
+}
+.timePicker .txt
+{
+	width: 25px;
+	text-align: center;
+	height: 18px;
+	line-height: 18px;
+	border: 0;
+	font-size: 14px;
+}
+.timePicker span
+{
+	width: 10px;
+	text-align: center;
+}
+.timePicker .right
+{
+	width: 19px;
+	height: 22px;
+	float: left;
+}
+.timePicker .arrow
+{
+	width: 19px;
+	height: 20px;
+	font-size: 8px;
+	line-height: 1px;
+}
+.timePicker .arrow .up
+{
+	background: url(images/timePickerClick.gif) no-repeat left top;
+	height: 10px;
+	width: 19px;
+	cursor: pointer;
+}
+.timePicker .arrow .uphover
+{
+	background: url(images/timePickerClick.gif) no-repeat right top;
+}
+.timePicker .arrow .down
+{
+	background: url(images/timePickerClick.gif) no-repeat left bottom;
+	height: 10px;
+	width: 19px;
+	margin-top: 1px;
+	cursor: pointer;
+}
+.timePicker .arrow .downhover
+{
+	background: url(images/timePickerClick.gif) no-repeat right bottom;
+}
+/*----------------------------------------jquery.timePicker end-----------------------------------*/
+
+/*----------------------------------------jquery.windows start-----------------------------------*/
+.my_win {
+	position: absolute;
+	display: none;
+	z-index: 4;
+}
+.my_win h1.titleLeft {
+	float: left;
+	font-size: 12px;
+	background: url(images/L1.png) no-repeat;
+	height: 41px;
+	width: 4px;
+}
+
+.my_win h1.title 
+{
+	background: #5BB828 url(images/L2.png) repeat-x;/*#A5D5A7动态参数*/
+	text-align: left;
+	text-indent: 5px;
+	height: 41px;
+	line-height: 41px;
+	font-size: 14px;
+}
+
+.my_win .title em.close {
+	float: right;
+	width: 16px;
+	height: 41px;
+	background: url(images/del.gif) no-repeat center center;
+	cursor: pointer;
+}
+
+.my_win .content {
+	background: #FFFFFF;
+	padding: 2px;
+	color: #000;
+    min-height:60px;
+}
+/*----------------------------------------jquery.windows end-----------------------------------*/
+/*----------------------------------------jquery.pager.simple(高级的分页样式没有) start-----------------------------------*/
+.jPager {
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	background: #F2F2F2;
+}
+
+.jPager .pselect {
+	float: left;
+	width: 100px;
+}
+
+.jPager .pselect span {
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.jPager .pleft {
+	float: left;
+	text-indent: 5px;
+}
+
+.jPager .pleft font {
+	color: Red;
+}
+
+.jPager .pright {
+	float: right;
+	text-align: right;
+	height: 25px;
+}
+
+.jPager .pright a {
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+.jPager .pright .first,.jPager .pright .prev,.jPager .pright .next,.jPager .pright .last
+	{
+	cursor: pointer;
+}
+
+.jPager .pright input {
+	font-size: 12px;
+	float: left;
+	border: 1px solid #ccc;
+	margin-top: 4px;
+	cursor: pointer;
+}
+
+.jPager .pright .txt {
+	width: 30px;
+	margin-right: 2px;
+}
+
+.jPager .pright .btn {
+	height: 25px;
+	line-height: 25px;
+	float:left;
+}
+/*----------------------------------------jquery.pager.simple end-----------------------------------*/
+/*----------------------------------------jquery.load.table start-----------------------------------*/
+.loadTable
+{
+	color: #333;
+}
+.loadTable th
+{
+	height: 24px;
+	background: #F2F2F2;
+	border-right: 1px solid #EAEAEA;
+}
+.loadTable th.thEnd
+{
+	border: none;
+}
+.loadTable tr td
+{
+	text-align: center;
+	border-bottom: 1px solid #EAEAEA;
+}
+.loadTable td span.delete
+{
+	width: 24px;
+	height: 24px;
+	display:inline-block;
+	background: url(images/datete3.gif) no-repeat;
+	margin:0 auto;
+}
+/*----------------------------------------jquery.load.table end-----------------------------------*/
+
+/*----------------------------------------jquery.keyupTo.patch start-----------------------------------*/
+.patch
+{
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #666;
+    border-top:none;
+	position:absolute;
+	display:none;
+}
+.patch ul, .patch li
+{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+.patch ul
+{
+	width: 100%;
+	height:100%;
+    float:left;
+}
+.patch ul li
+{
+	float: left;
+	line-height: 20px;
+	height: 20px;
+	width: 100%;
+	cursor:pointer;
+}
+.patch .pName
+{
+	float: right;
+	color: #3D5678;
+	padding-right: 5px;
+}
+.patch .name
+{
+	float: left;
+	padding-left: 5px;
+}
+/*----------------------------------------jquery.keyupTo.patch end-----------------------------------*/
+
+/*----------------------------------------jquery.expression start-----------------------------------*/
+.divExpression ul, .divExpression li
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.divExpression table tr td.cape
+{
+	border-left: solid 2px blue;
+	border-right: solid 2px blue;
+}
+/*--td边角样式开始--*/
+.divExpression .Role
+{
+	border-collapse: collapse;
+	border: 0;
+	width: 100%;
+}
+.divExpression .Role div
+{
+	height: 5px;
+	border-left: 2px solid blue;
+	font: 0px Arial;
+	line-height: 0;
+}
+.divExpression .Role .left
+{
+	float: left;
+}
+.divExpression .Role .right
+{
+	float: right;
+}
+/*--td边角样式结束--*/
+.divExpression .divClear
+{
+	height: 2px;
+	font: 0px Arial;
+	line-height: 0;
+}
+.divExpression .tableMain
+{
+	border-collapse: collapse;
+	border: 0;
+}
+/*添加删除按钮样式*/
+.divExpression .option
+{
+	width: 30px;
+	height: 25px;
+}
+/*table子项开始*/
+.divExpression .tableChild
+{
+	border-collapse: collapse;
+	border: 0;
+}
+.divExpression .tableChild .tableChild
+{
+	vertical-align: middle;
+}
+.divExpression .tableChild .txtValue
+{
+	border: 1px solid #E3E9EF;
+}
+/*----------------------------------------jquery.expression end-----------------------------------*/
+
+/*----------------------------------------jquery.datePicker strat-----------------------------------*/
+.datePickAll
+{
+	width: 302px;
+	height: 175px;
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+.datePickAll ul, .datePickAll li, .datePickAll h1, .datePick h2
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 12px;
+}
+.datePick
+{
+	width: 50%;
+	height: 175px;
+	float: left;
+	background: #fff;
+}
+.datePick span
+{
+	width: 150px;
+	height: 25px;
+	line-height: 25px;
+	background: url(images/top.gif) repeat-x;
+	display: block;
+	position: relative;
+}
+.datePick span.left
+{
+	margin: 2px 0 2px 2px;
+	text-indent: 35px;
+}
+.datePick span.right
+{
+	margin: 2px 2px 2px 0;
+	text-indent: 40px;
+}
+.datePick span.center
+{
+	margin: 2px 2px 2px 2px;
+	text-indent: 20px;
+}
+.datePick span.right h1
+{
+	font-size: 12px;
+	height: 25px;
+	line-height: 25px;
+	float: right;
+}
+.datePick span h1#HL
+{
+	font-size: 12px;
+	width: 25px;
+	height: 25px;
+	background: url(images/left-xiao.gif) no-repeat center center;
+	float: left;
+}
+.datePick span h1#HR
+{
+	font-size: 12px;
+	width: 25px;
+	height: 25px;
+	background: url(images/right-xiao.gif) no-repeat center center;
+	float: right;
+}
+.datePick span.left h2, .datePick span.right h2, .datePick span.center h2
+{
+	float: left;
+	font-size: 12px;
+}
+.datePick span select.selectMon
+{
+	position: absolute;
+	right: 60px;
+	top: 2px;
+}
+.datePick span select.selectYear
+{
+	position: absolute;
+	right: 2px;
+	top: 2px;
+}
+.datePick ul.ul_day, .datePick ul.uw
+{
+	width: 140px;
+	margin: 5px;
+}
+.datePick ul.ul_day li
+{
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: Black;
+	font-weight: bold;
+	float: left;
+	cursor: pointer;
+}
+.datePick ul.uw li
+{
+	width: 20px;
+	height: 15px;
+	line-height: 15px;
+	color: #999;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+}
+.datePick ul.ul_day li.mouseover
+{
+	background: #1C95C4;
+	color: #fff;
+}
+.datePick ul.ul_day li.mouseout
+{
+	background: #fff;
+	color: Black;
+}
+.datePick ul.ul_day li.click
+{
+	background: #1C95C4;
+	color: #fff;
+}
+.datePick ul.ul_day li.now
+{
+	background: #fff;
+	color: Red;
+}
+.datePick ul.ul_day li.txt
+{
+	background: #777;
+	color: #fff;
+}
+.datePick ul.ul_day li.stop
+{
+	background: #fff;
+	color: #ccc;
+}
+/*----------------------------------------jquery.datePicker end-----------------------------------*/
+
+/*------------------微博产品之外的样式--------------------*/
+
+/*----------------------------------------jquery.drag.color strat-----------------------------------*/
+.sliderColor
+{
+	width: 300px;
+	height: 190px;
+	background: white;
+	border: 1px solid black;
+	display:none;
+	position:absolute;
+}
+.sliderColor h1
+{
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	height: 25px;
+	line-height: 25px;
+	text-indent: 10px;
+	background: #EFF6FE;
+}
+.sliderColor span
+{
+	width: 90px;
+	height: 30px;
+	border: 1px solid black;
+	display: block;
+	margin: 2px auto;
+}
+.sliderColor .color
+{
+	width: 277px;
+	height: 23px;
+	position: relative;
+	margin: 10px auto;
+	background: url("images/color_scale_blue.jpg") no-repeat center;
+}
+.sliderColor div img
+{
+	position: absolute;
+	width: 23px;
+	height: 33px;
+	left: 0;
+	top: -5px;
+	display: block;
+	cursor: move;
+}
+.sliderColor #red_scale
+{
+	background-image: url("images/color_scale_red.jpg");
+}
+.sliderColor #green_scale
+{
+	background-image: url("images/color_scale_green.jpg");
+}
+.sliderColor .btn
+{
+	width: 50px;
+	height: 20px;
+	background: #EFF6FE;
+	float: right;
+}
+.sliderColor .ok
+{
+	margin-right: 11px;
+}
+/*----------------------------------------jquery.drag.color end-----------------------------------*/
+
+
+/*----------------------------------------jquery.drag.slider start-----------------------------------*/
+/*----------------------------------------------------横式滑块样式-------------------------------------------------*/
+#scale
+{
+	width: 450px;
+	height: 100px;
+	margin: 30px auto;
+	background: white url("images/slider_scale.jpg") no-repeat center bottom;
+	position: relative;
+}
+#scale img
+{
+	width: 20px;
+	height: 35px;
+	margin: 20px 34px 0 21px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/*----------------------------------------------------竖式滑块样式-------------------------------------------------*/
+#volume
+{
+	width: 80px;
+	height: 126px;
+	background: #ECE9D8 url("images/vol_bg.gif") no-repeat center 32px;
+	border: 2px outset #ECE9D8;
+	margin: 0 auto;
+}
+#volume h6
+{
+	font-weight: normal;
+	font-size: 12px;
+	text-align: center;
+	line-height: 34px;
+}
+#vol_slider
+{
+	width: 30px;
+	height: 72px;
+	margin: 0 auto;
+	position: relative;
+}
+#vol_slider a
+{
+	display: block;
+	width: 22px;
+	height: 11px;
+	background: url("images/vol_knob.gif") no-repeat center;
+	margin: 0 0 2px 3px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#vol_slider a:hover
+{
+	background-image: url("images/vol_knob_hover.gif");
+}
+/*----------------------------------------jquery.drag.slider end-----------------------------------*/
+
+/*----------------------------------------jquery.item start-----------------------------------*/
+.itemUl .itemLi
+{
+	float:left;
+	height:20px;
+	line-height:20px;
+}
+/*----------------------------------------jquery.item end-----------------------------------*/
+
+/*----------------------------------------jquery.load.slider start-----------------------------------*/
+.loadSlide .left
+{
+	width: 16px;
+	height: 16px;
+	background: url(images/left.gif) no-repeat;
+	float: left;
+}
+.loadSlide .right
+{
+	width: 16px;
+	height: 16px;
+	background: url(images/right.gif) no-repeat;
+	float: left;
+}
+/*整个div样式*/
+.loadSlide .prolist
+{
+	position: relative;
+	height: 225px;
+	border: 1px solid #AAA;
+	background: #FFF;
+	overflow: hidden;
+	float: left;
+}
+/*内容div样式*/
+.loadSlide .content
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*----------------------------------------jquery.load.slider end-----------------------------------*/
+
+/*----------------------------------------jquery.treeview start-----------------------------------*/
+.treeview, .treeview ul { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.treeview ul {
+	background-color: white;
+	margin-top: 4px;
+}
+
+.treeview .hitarea {
+	background: url(images/treeview-default.gif) -64px -25px no-repeat;
+	height: 16px;
+	width: 16px;
+	margin-left: -16px;
+	float: left;
+	cursor: pointer;
+}
+/* fix for IE6 */
+* html .hitarea {
+	display: inline;
+	float:none;
+}
+
+.treeview li { 
+	margin: 0;
+	padding: 3px 0pt 3px 16px;
+}
+
+.treeview a.selected {
+	background-color: #eee;
+}
+
+#treecontrol { margin: 1em 0; display: none; }
+
+.treeview .hover { color: red; cursor: pointer; }
+
+.treeview li { background: url(images/treeview-default-line.gif) 0 0 no-repeat;}
+.treeview li.collapsable, .treeview li.expandable { background-position: 0 -176px; }
+
+.treeview .expandable-hitarea { background-position: -80px -3px; }
+
+.treeview li.last { background-position: 0 -1766px }
+.treeview li.lastCollapsable, .treeview li.lastExpandable { background-image: url(images/treeview-default.gif); }  
+.treeview li.lastCollapsable { background-position: 0 -111px }
+.treeview li.lastExpandable { background-position: -32px -67px }
+
+.treeview div.lastCollapsable-hitarea, .treeview div.lastExpandable-hitarea { background-position: 0; }
+
+.treeview-red li { background-image: url(images/treeview-red-line.gif); }
+.treeview-red .hitarea, .treeview-red li.lastCollapsable, .treeview-red li.lastExpandable { background-image: url(images/treeview-red.gif); } 
+
+.treeview-black li { background-image: url(images/treeview-black-line.gif); }
+.treeview-black .hitarea, .treeview-black li.lastCollapsable, .treeview-black li.lastExpandable { background-image: url(images/treeview-black.gif); }  
+
+.treeview-gray li { background-image: url(images/treeview-gray-line.gif); }
+.treeview-gray .hitarea, .treeview-gray li.lastCollapsable, .treeview-gray li.lastExpandable { background-image: url(images/treeview-gray.gif); } 
+
+.treeview-famfamfam li { background-image: url(images/treeview-famfamfam-line.gif); }
+.treeview-famfamfam .hitarea, .treeview-famfamfam li.lastCollapsable, .treeview-famfamfam li.lastExpandable { background-image: url(images/treeview-famfamfam.gif); } 
+
+
+.filetree li { padding: 3px 0 2px 16px; }
+.filetree span.folder, .filetree span.file { padding: 1px 0 1px 16px; display: block; }
+.filetree span.folder { background: url(images/folder.gif) 0 0 no-repeat; }
+.filetree li.expandable span.folder { background: url(images/folder-closed.gif) 0 0 no-repeat; }
+.filetree span.file { background: url(images/file.gif) 0 0 no-repeat; }
+/*----------------------------------------jquery.treeview end-----------------------------------*/
+
+/*----------------------------------------jquery.returnTop start-----------------------------------*/
+.backToTop
+{
+	display: none;
+	width: 18px;
+	line-height: 1.2;
+	padding: 5px 0;
+	background-color: black;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	position: fixed;
+	_position: absolute;
+	right: 10px;
+	bottom: 100px;
+	_bottom: "auto";
+	cursor: pointer;
+}
+/*----------------------------------------jquery.returnTop end-----------------------------------*/
+
+/*----------------------------------------jquery.round start-----------------------------------*/
+.roundDos
+{
+}
+.roundDos .round, .roundDos .span
+{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.roundDos .span
+{
+	padding: 0 4px 0 4px;
+	display: block;
+	width: auto;
+	text-align: center;
+	height: auto;
+	line-height: 25px;
+	border: 1px solid #D7DD6F;
+	background: #FEFFED;
+	cursor: pointer;
+}
+.roundDos ul, .roundDos li
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.roundDos .info
+{
+	display: none;
+	border-top: 1px dashed #D7DD6F;
+	width: 470px;
+	text-align: left;
+}
+.roundDos .info li
+{
+	display:block;
+	width: 215px;
+	margin-right: 20px;
+	float: left;
+}
+.roundDos .info li em
+{
+	float: right;
+	font-style: normal;
+}
+/*----------------------------------------jquery.round end-----------------------------------*/
+
+
+
+
+

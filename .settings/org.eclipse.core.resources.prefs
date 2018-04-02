@@ -1,0 +1,24 @@
+#Wed Oct 15 14:53:01 CST 2014
+eclipse.preferences.version=1
+encoding//WebRoot/login.jsp=UTF-8
+encoding//WebRoot/modules/accountMonitor/accountMonitor.htm=UTF-8
+encoding//WebRoot/modules/eventMonitor/eventMonitor.htm=UTF-8
+encoding//WebRoot/modules/myTwitter/myTwitter.dataAnalysis.htm=UTF-8
+encoding//WebRoot/modules/myTwitter/myTwitter.myHomePage.htm=UTF-8
+encoding//WebRoot/modules/myTwitter/myTwitter.myReview.htm=UTF-8
+encoding//WebRoot/modules/myTwitter/myTwitter.myReview.js=UTF-8
+encoding//WebRoot/modules/portal/portal.htm=UTF-8
+encoding//WebRoot/modules/sysManager/sysManager.accountBinding.htm=UTF-8
+encoding//WebRoot/modules/sysManager/sysManager.approveSetting.htm=UTF-8
+encoding//WebRoot/modules/sysManager/sysManager.authorityManager.htm=UTF-8
+encoding//WebRoot/modules/sysManager/sysManager.taskManager.htm=UTF-8
+encoding//WebRoot/modules/twitterPubSentiment/twitterPubSentiment.view.htm=UTF-8
+encoding//WebRoot/scripts/plugin/jquery.load.table/HTMLPage.htm=UTF-8
+encoding//WebRoot/themes/plugin/jquery.outer.all.css=UTF-8
+encoding//src/com/xunku/ObjectModel/ReplyType.java=UTF-8
+encoding//src/com/xunku/actions/ActionFactory.java=UTF-8
+encoding//src/com/xunku/actions/ActionProxy.java=UTF-8
+encoding//src/com/xunku/constant/QQParamType.java=UTF-8
+encoding//src/config.properties=UTF-8
+encoding/<project>=UTF-8
+encoding/vssver2.scc=UTF-8

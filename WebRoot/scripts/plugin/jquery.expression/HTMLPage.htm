@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>表达式控件</title>
+    <link href="../../../themes/plugin/jquery.outer.all.css" rel="stylesheet" type="text/css" />
+    <script src="../jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="../jquery.bgIframe/jquery.bgiframe.js" type="text/javascript"></script>
+    <script src="../jquery.tool/jquery.tool.js" type="text/javascript"></script>
+    <script src="../jquery.windows/jquery.windows.js" type="text/javascript"></script>
+    <script src="jquery.expression.format.js" type="text/javascript"></script>
+    <script src="jquery.expression.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            var newKey = null;
+            //调用表达式控件
+            $('.aaaa').window({
+                css: { "width": "900px", "height": "600px", "overflow": "auto", "background-color": "#FFF" },
+                title: "设置表达式",
+                id: "setExpression",
+                onClick: function (div, clickThis) {
+                    var tree = newKey == null ? null : new QueryFormat(newKey).outputExpressionTree();
+                    alert(newKey);
+                    alert($.toJson(tree));
+                    div.find('.content').expression({
+                        value: tree,
+                        onOK: function (txt, key, exp) {
+                            b = exp.Nodes.length == 0 ? null : exp;
+                            newKey = key == '' ? null : key;
+                            alert($.toJson(key));
+                            div.hide();
+                            $.remove({ obj: "#" + JLY });
+                        },
+                        onCancel: function () {
+                            div.hide();
+                            $.remove({ obj: "#" + JLY });
+                        }
+                    });
+                }
+            });
+            var a = '<tr><td nowrap="nowrap"><input class="option btnRemoveMain" value="-" type="button"><select class="selectMain"><option value="OR">或者</option> <option value="AND">并且</option></select></td><td class="cape" nowrap="nowrap"><table class="Role" cellpadding="0"> <tbody> <tr> <td> <div class="left"> </div> <div class="right"> </div></td></tr></tbody></table><table class="tableChild" cellpadding="0"><tbody><tr><td nowrap="nowrap" align="right"><input value="-" class="option btnReomveBrothers" type="button"></td><td nowrap="nowrap"><table class="clause" border="0" cellpadding="0" cellspacing="1"><tbody><tr><td nowrap="nowrap"><select class="field"><option value="content">正文</option><option value="title">标题</option><option value="source">媒体</option></select></td><td nowrap="nowrap"><select class="term"> <option value="Contains" type="">包含</option> <option value="NOT" type="-">不包含</option> </select></td><td nowrap="nowrap"><input maxlength="100" class="value" type="text"></td></tr></tbody></table></td></tr><tr><td nowrap="nowrap" align="right"><input value="-" class="option btnReomveBrothers" type="button"></td><td nowrap="nowrap"><table class="clause" border="0" cellpadding="0" cellspacing="1"><tbody><tr><td nowrap="nowrap"><select class="field"><option value="content">正文</option><option value="title">标题</option><option value="source">媒体</option></select></td><td nowrap="nowrap"><select class="term"> <option value="Contains" type="">包含</option> <option value="NOT" type="-">不包含</option> </select></td><td nowrap="nowrap"><input maxlength="100" class="value" type="text"></td></tr></tbody></table></td></tr><tr><td nowrap="nowrap"><input class="option btnRemoveParent" value="-" type="button"><select class="selectMain"><option value="OR">或者</option> <option value="AND">并且</option></select></td><td class="cape" nowrap="nowrap"><table class="Role" cellpadding="0"> <tbody> <tr> <td> <div class="left"> </div> <div class="right"> </div></td></tr></tbody></table><table class="tableChild" cellpadding="0"><tbody><tr><td nowrap="nowrap" align="right"><input value="-" class="option btnReomveBrothers" type="button"></td><td nowrap="nowrap"><table class="clause" border="0" cellpadding="0" cellspacing="1"><tbody><tr><td nowrap="nowrap"><select class="field"><option value="content">正文</option><option value="title">标题</option><option value="source">媒体</option></select></td><td nowrap="nowrap"><select class="term"> <option value="Contains" type="">包含</option> <option value="NOT" type="-">不包含</option> </select></td><td nowrap="nowrap"><input maxlength="100" class="value" type="text"></td></tr></tbody></table></td></tr><tr><td nowrap="nowrap" align="right"><input value="-" class="option btnReomveBrothers" type="button"></td><td nowrap="nowrap"><table class="clause" border="0" cellpadding="0" cellspacing="1"><tbody><tr><td nowrap="nowrap"><select class="field"><option value="content">正文</option><option value="title">标题</option><option value="source">媒体</option></select></td><td nowrap="nowrap"><select class="term"> <option value="Contains" type="">包含</option> <option value="NOT" type="-">不包含</option> </select></td><td nowrap="nowrap"><input maxlength="100" class="value" type="text"></td></tr></tbody></table></td></tr></tbody></table><input title="添加条件" value="+" class="option btnAddBrothers" key="0" type="button"> <input title="添加子条件" value="+[]" class="option btnAddParent" key="0" type="button"> <table class="Role" cellpadding="0"> <tbody> <tr> <td> <div class="left"> </div> <div class="right"> </div> </td> </tr></tbody></table></td></tr><tr><td nowrap="nowrap" align="right"><input value="-" class="option btnReomveBrothers" type="button"></td><td nowrap="nowrap"><table class="clause" border="0" cellpadding="0" cellspacing="1"><tbody><tr><td nowrap="nowrap"><select class="field"><option value="content">正文</option><option value="title">标题</option><option value="source">媒体</option></select></td><td nowrap="nowrap"><select class="term"> <option value="Contains" type="">包含</option> <option value="NOT" type="-">不包含</option> </select></td><td nowrap="nowrap"><input maxlength="100" class="value" type="text"></td></tr></tbody></table></td></tr><tr><td nowrap="nowrap" align="right"><input value="-" class="option btnReomveBrothers" type="button"></td><td nowrap="nowrap"><table class="clause" border="0" cellpadding="0" cellspacing="1"><tbody><tr><td nowrap="nowrap"><select class="field"><option value="content">正文</option><option value="title">标题</option><option value="source">媒体</option></select></td><td nowrap="nowrap"><select class="term"> <option value="Contains" type="">包含</option> <option value="NOT" type="-">不包含</option> </select></td><td nowrap="nowrap"><input maxlength="100" class="value" type="text"></td></tr></tbody></table></td></tr><tr><td nowrap="nowrap"><input class="option btnRemoveParent" value="-" type="button"><select class="selectMain"><option value="OR">或者</option> <option value="AND">并且</option></select></td><td class="cape" nowrap="nowrap"><table class="Role" cellpadding="0"> <tbody> <tr> <td> <div class="left"> </div> <div class="right"> </div></td></tr></tbody></table><table class="tableChild" cellpadding="0"><tbody><tr><td nowrap="nowrap" align="right"><input value="-" class="option btnReomveBrothers" type="button"></td><td nowrap="nowrap"><table class="clause" border="0" cellpadding="0" cellspacing="1"><tbody><tr><td nowrap="nowrap"><select class="field"><option value="content">正文</option><option value="title">标题</option><option value="source">媒体</option></select></td><td nowrap="nowrap"><select class="term"> <option value="Contains" type="">包含</option> <option value="NOT" type="-">不包含</option> </select></td><td nowrap="nowrap"><input maxlength="100" class="value" type="text"></td></tr></tbody></table></td></tr><tr><td nowrap="nowrap" align="right"><input value="-" class="option btnReomveBrothers" type="button"></td><td nowrap="nowrap"><table class="clause" border="0" cellpadding="0" cellspacing="1"><tbody><tr><td nowrap="nowrap"><select class="field"><option value="content">正文</option><option value="title">标题</option><option value="source">媒体</option></select></td><td nowrap="nowrap"><select class="term"> <option value="Contains" type="">包含</option> <option value="NOT" type="-">不包含</option> </select></td><td nowrap="nowrap"><input maxlength="100" class="value" type="text"></td></tr></tbody></table></td></tr></tbody></table><input title="添加条件" value="+" class="option btnAddBrothers" key="0" type="button"> <input title="添加子条件" value="+[]" class="option btnAddParent" key="0" type="button"> <table class="Role" cellpadding="0"> <tbody> <tr> <td> <div class="left"> </div> <div class="right"> </div> </td> </tr></tbody></table></td></tr></tbody></table><input title="添加条件" value="+" class="option btnAddBrothers" key="0" type="button"> <input title="添加子条件" value="+[]" class="option btnAddParent" key="0" type="button"> <table class="Role" cellpadding="0"> <tbody> <tr> <td> <div class="left"> </div> <div class="right"> </div> </td> </tr></tbody></table></td></tr>';
+            var c = '-(title|rt) AND (content|y OR title|y) AND ((content|a1 OR title|a1) OR (content|a2 OR title|a2) OR ((content|三级 OR title|三级) OR (content|三级我们 OR title|三级我们))) AND (content|cccc OR title|cccc) AND (content|sunao OR title|sunao) AND ((content|中 OR title|中) OR (content|我们 OR title|我们))';
+            var b = { "Operator": "AND", "Nodes": [
+                            { "Field": "title", "Term": "NOT", "Value": "rt" },
+                            { "Field": "content", "Term": "Contains", "Value": "y" },
+                            { "Operator": "OR", "Nodes": [
+                                { "Field": "content", "Term": "Contains", "Value": "a1" },
+                                { "Field": "content", "Term": "Contains", "Value": "a2" },
+                                { "Operator": "OR", "Nodes": [
+                                { "Field": "content", "Term": "Contains", "Value": "三级" },
+                                { "Field": "content", "Term": "Contains", "Value": "三级我们"}]
+                                }]
+                            },
+                            { "Field": "content", "Term": "Contains", "Value": "cccc" },
+                            { "Field": "content", "Term": "Contains", "Value": "sunao" },
+                            { "Operator": "OR", "Nodes": [
+                                { "Field": "content", "Term": "Contains", "Value": "中" },
+                                { "Field": "content", "Term": "Contains", "Value": "我们"}]
+                            }]
+            };
+            var d = { "Operator": "AND", "Nodes": [
+                            { "Field": "content", "Term": ":", "Value": "y" },
+                            { "Operator": "OR", "Nodes": [
+                                { "Field": "content", "Term": ":", "Value": "a1" },
+                                { "Field": "content", "Term": ":", "Value": "a2"
+                                }]
+                            },
+                            { "Field": "title", "Term": "!:", "Value": "rt"}]
+            }
+
+
+            $[EX]({
+                'GetQuerySelect': function (searchType) {
+                    switch (searchType) {
+                        case 0: //新闻
+                            return [{ key: "content", text: "正文" }, { key: "title", text: "标题" }, { key: "source", text: "媒体"}];
+                            break;
+                        case 1: //bbs
+                            return [{ key: "content", text: "正文" }, { key: "title", text: "标题" }, { key: "source", text: "媒体"}];
+                            break;
+                        case 2: //国内微博
+                            return [{ key: "_content", text: "原文" }, { key: "content1", text: "全文"}];
+                            break;
+                        case 3: //视频
+                            return [{ key: "title", text: "标题" }, { key: "content", text: "全文"}];
+                            break;
+                        case 4: //国外微博
+                            return [{ key: "_content", text: "原文" }, { key: "content1", text: "全文"}];
+                            break;
+                        case 5: //FaceBook
+                            return [{ key: "_content", text: "原文" }, { key: "content1", text: "全文"}];
+                            break;
+                    }
+                }
+            });
+        })
+    </script>
+</head>
+<body style=" height:700px;">
+    <div style=" height:3000px; overflow:scroll;">
+        <input class="aaaa" type="button" value="表达式" />
+    </div>
+</body>
+</html>

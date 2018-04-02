@@ -1,0 +1,149 @@
+﻿
+<!--pushService-->
+<div id="twitterPush">
+	<div id="twitterPush_main">
+		<div class="talkMe event">
+
+			<!--send content-->
+			<div class="send_content">
+						<h1 id="pushServices_addBTN">
+				<!-- 
+				<span class="event_add imp_liRight"  PmiID="yjfw_wbtsadd"></span>
+				-->
+					<!--  		{pmi:yjfw_wbtsadd_1}  -->
+					
+			</h1>
+			<div class="com_clear"></div>
+				<!--wait check-->
+				<div class="send_selContent"  id="listdiv">
+
+				</div>
+			</div>
+			<div class="com_clear"></div>
+			<!--pages-->
+			<div id="allPager" style="width: 1000px; margin: 0 auto;">
+			</div>
+		</div>
+
+		<!--service_tails-->
+		<div id="service_tails">
+			<!--send content-->
+			<div class="send_content">
+				<h1  id="pushtwitter_h1"></h1>
+				<div class="send_selContent">
+					<div class="service_style">
+						<label for="task_name" class="task_name">
+							推送名称：
+						</label>
+						<input type="text" id="task_name" class="task_count" />
+						<div id="task_name_id"  class="com_none"></div>
+						<span  id="task_name_prompt"  class="com_none"><font color="red">&nbsp;&nbsp;&nbsp;*&nbsp;任务名称不能为空或含有特殊字符</font></span>
+						<span  id="task_name_repeat"  class="com_none"><font color="red">&nbsp;&nbsp;&nbsp;*&nbsp;任务名称已经存在请重新添加</font></span>
+					</div>
+					<div class="service_style">
+						<label for="task_type" class="task_name">
+							任务类型：
+						</label>
+						<select id="task_type" class="task_count">
+							<option value="1"  selected = "selected" >
+								事件监测
+							</option>
+							<option value="0" >
+								日常监测
+							</option>
+						</select>
+					</div>
+					<div class="service_style">
+						<label class="task_name">
+							监测内容：
+						</label>
+						<div class="task_add" id="checkcontent">
+							添加
+						</div>
+						<span  id="checkcontent_prompt"  class="com_none"><font color="red">&nbsp;&nbsp;&nbsp;*&nbsp;监测内容没有添加</font></span>
+						<div class="com_clear"></div>
+						<div class="task_addCount" id="taskList"></div>
+					</div>
+					<div class="service_style">
+						<label class="task_name">
+							接收人：
+						</label>
+						<div class="task_add" id="receiveman">
+							从通讯录添加
+						</div>
+						<span  id="receiveman_prompt"  class="com_none"><font color="red">&nbsp;&nbsp;&nbsp;*&nbsp;通讯录没有添加</font></span>
+						<div class="com_clear"></div>
+						<div class="task_addCount"  id="nameList">
+						</div>
+					</div>
+					
+						<div class="service_style">
+						<label class="task_name">
+							任务将在&nbsp;&nbsp;
+						</label>
+						<input type="text"  class="push_time"  readonly="readonly"   id="pushervices_twitter_dateTimeall" />
+						<div class="push_hours">
+							
+						</div>
+						<span class="ser_title">开始为你推送</span>
+						<span  id="pushservicesMails_prompt"  class="com_none"><font color="red">&nbsp;&nbsp;&nbsp;*&nbsp;至少在今天以后的时间段里</font></span>
+					</div>
+					<!-- ========== -->
+					<div class="service_way service_style">
+						   <label class="task_name">发送条数：</label>
+                            <div  id="pushservicesMails">
+                                      <select  id="pushservice_twitter_sendNum" class="ser_Tback1">
+                                  <option  value ="1">10</option>
+                                  <option value ="2">20</option>
+                                  <option  value ="3">30</option>
+                                  <!-- 
+                                  <option  value ="5">50</option>
+                                  <option  value ="10">100</option>
+                                  -->
+                              </select>
+                            <span class="ser_title">条&nbsp;(* 指的是每个任务发送微博条数)</span>  
+                            
+                            </div>
+                         
+					</div>
+					<div class="service_style">
+						<label for="push_cycle" class="task_name">
+							发送时间：
+						</label>
+						<input type="text"    class="push_cycle"  id="push_cycleday" value="1" />
+						<select class="push_Ttype" id="pushserivce_dateType"  >
+							<option  value="2" selected = "selected" >
+								天
+							</option>
+							<option value="3">
+								周
+							</option>
+							<option  value="4">
+								月
+							</option>
+						</select>
+					</div>
+					
+					
+					<div class="service_style">
+					</div>
+					<div class="service_style">
+						<!-- 
+						<div class="push_do push_save" PmiID="yjfw_wbtssave">
+							保存
+						</div>
+						-->
+						<div class="pushservices_quanxian">
+									{pmi:yjfw_wbtssave_1}
+									{pmi:yjfw_wbtsmodify_1}
+											<div class="push_do push_close">
+							取消
+						</div>
+									</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--pushService end-->

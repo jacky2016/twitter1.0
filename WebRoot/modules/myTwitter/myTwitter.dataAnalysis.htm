@@ -1,0 +1,221 @@
+<!--dataAnalysis-->
+<div id="dataAnalysis">
+	<div id="dataAnalysis_main">
+		<div class="dataAnalysis">
+			<h1>
+				<span class="dataAnaly_left">客户平台</span>
+				<div class="mynum_list" id="dataCurrentAccountStart">
+				</div>
+			</h1>
+			<div class="customer_cont">
+				<div class="cus_left">
+					<img alt="" width="100" height="100" class="cus_photo" id="userImg"
+						src="" />
+					<div style="float: left">
+						<ul>
+							<li class="li_weight">
+								<span class="com_fLeft" id="userName"></span>
+								<span class="com_fLeft cus_jbTips com_none" id="userV"></span>
+							</li>
+							<div class="com_clear"></div>
+							<li>
+								<span class="com_fLeft">地域:&nbsp;&nbsp;</span><span class="cus_cout com_fLeft" id="userArea"></span>
+							</li>
+							<div class="com_clear"></div>
+							<li>
+								<span class="com_fLeft">简介:&nbsp;&nbsp;</span><span class="cus_cout com_fLeft" id="userContent"></span>
+							</li>
+						</ul>
+
+						<div class="com_clear"></div>
+						
+					</div>
+				</div>
+
+				<div class="cus_right">
+			<table cellpadding="0" cellspacing="0" class="middle_table">
+							<th>
+								关注
+							</th>
+							<th>
+								粉丝
+							</th>
+							<th>
+								微博
+							</th>
+							<tr>
+								<td id="userFriend">
+									1236754
+								</td>
+								<td id="userFollow">
+									87675546
+								</td>
+								<td id="userTwitter">
+									678664
+								</td>
+							</tr>
+						</table>
+				</div>
+			</div>
+		</div>
+		<div class="com_clear">
+		</div>
+		<!--send content-->
+		<div class="send_content ana_tongji">
+			<h1>
+				<span class="zhao_change zhao_back dataAnaly_left tabs">发布统计</span>
+				<span class="zhao_change dataAnaly_left tabs"> @我统计</span>
+				<span class="zhao_change dataAnaly_left tabs">趋势分析</span><span
+					class="zhao_change dataAnaly_left tabs">粉丝分析</span>
+			</h1>
+			<div class="com_clear">
+			</div>
+			<!--fabutongji-->
+			<div class="send_selContent contents">
+				<div class="send_selWay">
+					<div class="news_type">
+						<span>日期分布：</span>
+						<div class="job_list charBtns" id="day7">
+							7天
+						</div>
+						<div class="job_list charBtns" id="day30">
+							30天
+						</div>
+						<span>从</span>
+						<input type="text" class="ana_select" id="startDay" />
+						<span>到</span>
+						<input type="text" class="ana_select" id="endDay" />
+						<span class="ana_selBotton charBtns" id="charDateBtn"></span>
+					</div>
+				</div>
+				<div class="com_clear">
+				</div>
+				<div class="qushiAna_cont tj_show" id="dataAnalysisOne">
+				</div>
+				<div class="com_clear">
+				</div>
+				<div class="send_selWay">
+					<div class="news_type">
+						<span>时间段分布：</span>
+						<span>从</span>
+						<input type="text" class="ana_select" id="startTimeDay" />
+						<span>到</span>
+						<input type="text" class="ana_select" id="endTimeDay" />
+						<span class="ana_selBotton" id="charDateTimeBtn"></span>
+					</div>
+				</div>
+				<div class="com_clear">
+				</div>
+				<div class="qushiAna_cont tj_show" id="dataAnalysisTwo">
+				</div>
+			</div>
+			<!--@wotongji-->
+			<div class="send_selContent com_none contents">
+				<div class="send_selWay">
+					<div class="news_type">
+						<span>日期分布：</span>
+						<div class="job_list charTMBtns" id="dayTM7">
+							7天
+						</div>
+						<div class="job_list charTMBtns" id="dayTM30">
+							30天
+						</div>
+						<span>从</span>
+						<input type="text" class="ana_select" id="startTMDay" />
+						<span>到</span>
+						<input type="text" class="ana_select" id="endTMDay" />
+						<span class="ana_selBotton charTMBtns" id="charDateTMBtn"></span>
+					</div>
+				</div>
+				<div class="com_clear">
+				</div>
+				<div class="tj_show" id="dataAnalysisTMData"
+					style="width: 988px; height: 360px;">
+				</div>
+			</div>
+			<!--@qushianalyse-->
+			<div class="send_selContent com_none contents">
+				<div class="send_selWay">
+					<div class="news_type">
+						<div class="job_list charQSBtns" id="dayQS7">
+							7天
+						</div>
+						<div class="job_list charQSBtns" id="dayQS30">
+							30天
+						</div>
+						<span>从</span>
+						<input type="text" class="ana_select" id="startQSDay" />
+						<span>到</span>
+						<input type="text" class="ana_select" id="endQSDay" />
+						<span class="ana_selBotton charQSBtns" id="charDateQSBtn"></span>
+					</div>
+				</div>
+				<div class="com_clear">
+				</div>
+				<div class="tj_mar qushiAna_cont">
+					<h4>
+						转发数
+					</h4>
+					<div class="tj_show" id="dataAnalysisSQData"
+						style="width: 988px; height: 360px;">
+					</div>
+				</div>
+				<div class="com_clear">
+				</div>
+				<div class="qushiAna_cont">
+					<h4>
+						评论数
+					</h4>
+					<div class="tj_show" id="dataAnalysisSQData2"
+						style="width: 988px; height: 360px;">
+					</div>
+				</div>
+			</div>
+			<!--@fensianalyse-->
+			<div class="send_selContent com_none contents">
+				<div class="fensiAna_cont1 tj_mar">
+					<h4>
+						认证比例
+					</h4>
+					<div class="tj_show" id="fsAuthentication">
+					</div>
+				</div>
+				<div class="fensiAna_cont1 tj_mar">
+					<h4>
+						用户粉丝数
+					</h4>
+					<div class="tj_show" id="fsCount">
+					</div>
+				</div>
+				<div class="com_clear">
+				</div>
+				<div class="fensiAna_cont1">
+					<h4>
+						性别比例
+					</h4>
+					<div class="tj_show" id="fsSex">
+					</div>
+				</div>
+				<div class="fensiAna_cont1 each_other">
+					<h4>
+						粉丝最多用户排行
+					</h4>
+					<div class="tj_show" id="fsFans">
+					</div>
+				</div>
+				<div class="com_clear">
+				</div>
+				<div class="qushiAna_cont">
+					<h4>
+						地域分析
+					</h4>
+					<div class="tj_show" id="fsArea"
+						style="width: 988px; height: 360px;">
+					</div>
+				</div>
+				<div class="com_clear">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

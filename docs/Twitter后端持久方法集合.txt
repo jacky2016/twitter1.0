@@ -1,0 +1,80 @@
+首页展示：
+ModuleDao->queryByAll()//获取所有模块的信息
+WeiboInfoDao->queryByAID(int aid)//根据账号获取首页微博信息
+WeiboInfoDao->insert(WeiboInfo wi)//添加首页微博信息
+WeiboInfoDao->queryByUserID(int userId)//根据用户查询首页微博信息
+WeiboAccountDao->updateByCID(WeiboAccount wa)//根据微博账号更新
+HotDao->queryByPlatform(int platform)//获取首页的热点文字
+
+我的微博：
+我的首页->PostDao->insert(Post post)//发布微博
+我的首页->PostDao->deleteById(int pid)//删除发布微博
+我的首页->PostDao->queryByAll(PagerDTO dto,int aid)//查询全部我的微博
+我的首页->PostDao->queryByOriginal(PagerDTO dto,int aid)//查询我的原创微博
+我的首页->PostDao->queryByContainsIMG(PagerDTO dto,int aid)//查询我的图片微博
+我的首页->PostDao->queryBySearchKey(PagerDTO dto,int aid,LoadListType type,String keyWord)//通过关键词搜索全部微博,原创微博,图片微博
+
+我的评论->CommentDao->querySendComment(Comment c)//查询发出的评论
+我的评论->CommentDao->queryAtMePost(AtMePost at)//查询收到的评论
+我的评论->CommentDao->deleteById(int cid)//删除评论的微博
+我的评论->CommentDao->insert(Comment c)//回复微博
+
+发布管理->PostDao->queryByStatus(PagerDTO dto,int aid,int status)//获取用户发布微博的状态
+发布管理->PostDao->deleteById(int pid)//删除发布的微博
+发布管理->PostDao->updatePost(Post p)//修改发布的微博
+发布管理->PostDao->checkPost(int postId,int approved)//审核微博
+
+数据分析->
+
+微博舆情：
+TaskDao->queryByAll(int userId)//获取分组下的任务
+TaskDao->queryByGId(int gid)//获取分组下的任务
+舆情展示->CollectionGroupDao->queryByAll(int cId)//查询收藏夹的分类
+舆情展示->CollectionGroupDao->insert(CollectionGroup cg)//添加收藏夹的分类
+舆情展示->CollectionGroupDao->updateByID(CollectionGroup cg)//更新分类信息
+舆情展示->CollectionDao->insert(Collection c)//添加一个信息到收藏夹里
+
+事件监控：
+
+
+
+
+
+账号监测：
+
+
+
+
+
+
+传播分析：
+
+
+
+
+
+协同办公：
+考核管理->NavieDao->insert(Navie n)//添加网评员信息
+考核管理->NavieDao->bulkDelete(int[] ids)//批量删除网评员
+考核管理->NavieDao->queryByTextCount(WeiboPostDTO dto)//微博内容统计
+
+任务通知->MessageDao->insert(MessageDTO dto)//添加通知
+任务通知->MessageDao->queryReceiveMsg(MessageVO vo)//查询任务通知列表
+
+
+推送服务：
+
+
+
+
+系统设置：
+账号设置->WeiboAccountDao->insert(WeiboAccount wa)//添加微博账号
+账号设置->WeiboAccountDao->queryByUserID(int userId)//根据用户查询博主信息
+账号设置->WeiboAccountDao->deleteById(int aId)//根据微博账号id删除微博账号
+账号设置->WeiboAccountDao->updateAuthor(String expires,int aId)//延长授权和自动授权
+
+用户维护->UserDao->insert(User user)//添加用户
+用户维护->UserDao->queryByAll()//查询用户列表信息
+用户维护->UserDao->deleteByID(int uid)//根据用户ID删除用户
+用户维护->UserDao->updateByID(UserDTO dto)//根据用户ID更新用户信息
+

@@ -1,0 +1,20 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.event_do .account_start2{background:url(images/event_do.gif) no-repeat -33px -76px}
+.event_do .account_stop{background:url(images/event_do.gif) no-repeat 0 -106px;}
+/*account_analy*/
+#account_analy  .send_content{margin-bottom:20px;margin-top:0}
+#account_analy  .send_selWay{width:1000px;margin:20px 10px}
+#account_analy  .news_type span{float:left;margin:0 10px;}
+#account_analy  .news_type .ana_select{float:left;width:148px;height:24px;line-height:24px; margin-top:10px;}
+#account_analy  .news_type .ana_selBotton{width:64px;height:27px; line-height:27px;margin:12px 0 0 20px;}
+#account_analy  .news_type .data_type{width:400px;float:right;height:50px;line-height:50px;}
+#account_analy  .news_type .data_type .acData_sel{float:left;margin:0 20px 0 5px;height:50px;line-height:50px; cursor:pointer}
+#account_analy  .news_type .data_type .acData_sel2{float:left;margin-top:20px;*margin-top:15px;_margin-top:15px; display:inline}
+/*yujing*/
+.acc_yujing{width:500px;height:auto}
+.acc_yujing .canzhao{padding:2px 10px;color:#21afb9;text-align:center}
+.acc_yujing .canzhao:hover{color:#333; cursor:pointer}
+.acc_yujingBox{width:365px;height:auto;max-height:160px;_height:160px;margin:10px 0 0 100px;_margin:0 0 0 100px;overflow:auto}
+.acc_yujing .web_table{width:345px;margin:0}
+.yjSend_wayMar{margin:9px 3px 0 0px;*margin:5px 0 0 0;_margin:5px 2px 0 0px}

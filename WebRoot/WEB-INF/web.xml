@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<filter>
+		<filter-name>loginFilter</filter-name>
+		<filter-class>com.xunku.portal.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>loginFilter</filter-name>
+		<url-pattern>/index.jsp</url-pattern>
+		<url-pattern>/action</url-pattern>
+	</filter-mapping>
+	<context-param>
+		<param-name>url</param-name>
+		<param-value>
+			base#com.microsoft.sqlserver.jdbc.SQLServerDriver,jdbc:sqlserver://192.168.2.13:1433;databaseName=xk_weibo,sa,kx*0000|
+			weibolog#com.microsoft.sqlserver.jdbc.SQLServerDriver,jdbc:sqlserver://192.168.2.13:1433;databaseName=xk_weibo_log,sa,kx*0000
+		</param-value>
+	</context-param>
+	<listener>
+		<listener-class>com.xunku.portal.ListenerUrl</listener-class>
+	</listener>
+	
+	<!-- 核心Servlet -->
+	<servlet>
+		<description>ActionServlet</description>
+		<servlet-name>ActionServlet</servlet-name>
+		<servlet-class>com.xunku.portal.ActionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ActionServlet</servlet-name>
+		<url-pattern>/core.action</url-pattern>
+	</servlet-mapping>
+
+	<!-- 模板Servlet -->
+	<servlet>
+		<servlet-name>TemplateServlet</servlet-name>
+		<servlet-class>com.xunku.portal.TemplateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TemplateServlet</servlet-name>
+		<url-pattern>/temp.action</url-pattern>
+
+	</servlet-mapping>
+
+	<!-- 上传Servlet -->
+	<servlet>
+		<servlet-name>UploadifyServlet</servlet-name>
+		<servlet-class>com.xunku.portal.UploadifyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadifyServlet</servlet-name>
+		<url-pattern>/upload.action</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>consoleServlet</servlet-name>
+		<servlet-class>com.xunku.portal.ConsoleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>consoleServlet</servlet-name>
+		<url-pattern>/land/event</url-pattern>
+		<url-pattern>/land/spread</url-pattern>
+		<url-pattern>/land/official</url-pattern>
+		<url-pattern>/list/event</url-pattern>
+		<url-pattern>/list/spread</url-pattern>
+		<url-pattern>/list/official</url-pattern>
+		<url-pattern>/user/show</url-pattern>
+	</servlet-mapping>
+	<!-- 
+	<servlet>
+		<servlet-name>AccountServlet</servlet-name>
+		<servlet-class>com.xunku.portal.AccountServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccountServlet</servlet-name>
+		<url-pattern>/account.action</url-pattern>
+	</servlet-mapping>
+	授权Servlet -->
+	<!-- 登陆servlet -->
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.xunku.portal.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login.action</url-pattern>
+	</servlet-mapping>
+	<!-- 监控线程 -->
+	<servlet>
+		<servlet-name>DaemonServlet</servlet-name>
+		<servlet-class>com.xunku.portal.DaemonServlet</servlet-class>
+		<load-on-startup>10</load-on-startup>
+	</servlet>
+	<!--  注销 -->
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.xunku.portal.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logout.action</url-pattern>
+	</servlet-mapping>
+	
+	<!--  授权回调 -->
+	<servlet>
+		<servlet-name>AuthCallbackServlet</servlet-name>
+		<servlet-class>com.xunku.portal.AuthCallbackServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AuthCallbackServlet</servlet-name>
+		<url-pattern>/auth.action</url-pattern>
+		<url-pattern>/unauth.action</url-pattern>
+	</servlet-mapping>
+	<!--  微博商业api -->
+	<servlet>
+		<servlet-name>WeiboBusinessSearchServlet</servlet-name>
+		<servlet-class>com.xunku.portal.WeiboBusinessSearchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WeiboBusinessSearchServlet</servlet-name>
+		<url-pattern>/apisearch.action</url-pattern>
+	</servlet-mapping>
+	<!-- test servlet -->
+		<servlet>
+		<servlet-name>testServlet</servlet-name>
+		<servlet-class>com.xunku.test.TestServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>testServlet</servlet-name>
+		<url-pattern>/testServlet</url-pattern>
+		</servlet-mapping>
+	 
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

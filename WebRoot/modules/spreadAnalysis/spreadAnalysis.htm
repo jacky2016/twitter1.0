@@ -1,0 +1,222 @@
+﻿<!--spreed_analy-->
+<div id="spreadAnalysis">
+	<div id="spreadAnalusis_main">
+		{pmi:cbfx_monitor_1}
+		<!--  <div id="send_news">
+			<h1></h1>
+			<div class="myTw_show spreadAnalysis">
+				<input value="" type="text" class="sp_analyse" id="analyseUrl" />
+				<label class="rigntNow_analy" id="analyseBtn">
+					立即分析
+				</label>
+				<span title="点击微博左下方的时间获取微博链接" class="analy_what">&nbsp;</span>
+			</div>
+		</div>
+		<div class="com_clear"></div>-->
+		<!--send content-->
+		<div class="send_content">
+			<div class="send_selContent" id="saList">
+			</div>
+		</div>
+		<div class="com_clear"></div>
+		<!--pages 分页div-->
+		<div class="page_content" id="saPager">
+
+		</div>
+	</div>
+	<!--spallAnalysis-->
+	<div id="sp_all" class="com_none">
+		<div class="dataAnalysis">
+			<h1>
+				<span class="dataAnaly_left">客户平台</span>
+			</h1>
+			<div class="customer_cont">
+				<div class="cus_left">
+					<img id="twitterImg" src="themes/modules/images/noPhone.gif"
+						width="100" height="100" class="cus_photo">
+					<ul>
+						<li class="li_weight" id="twitterName">
+							暂无
+						</li>
+						<li>
+							<span id="location">暂无</span>
+						</li>
+						<li>
+							<span class="sp_allData">关注[<span id="friendsCount">0</span>]</span>
+							<span class="sp_allData">粉丝[<span id="followersCount">0</span>]</span>
+						</li>
+						<li>
+							<div class="sp_cuBotton sp_cuBback1">
+								<a id="look" href="" target="_blank">查看微博</a>
+							</div>
+							<div class="sp_cuBotton sp_cuBback2" id="resetBtn">
+								重新分析
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="sp_allRight">
+					<div class="sp_tip"></div>
+					<div class="sp_allCount" id="content">
+						暂无
+					</div>
+					<p class="sp_inforSour">
+						<span>来源：</span><span class="sp_numColor" id="sourceName">暂无</span>
+						<span>转发：</span><span class="sp_numColor" id="repostCount">0</span>
+						<span>评论：</span><span class="sp_numColor" id="commentCount">0</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="com_clear"></div>
+		<!--send content-->
+		<div class="send_content ana_tongji">
+			<h1>
+				<span class="zhao_change zhao_back sp_anaLeft tab">趋势分析</span>
+				<span class="zhao_change sp_anaLeft tab">转发层级</span>
+				<span class="zhao_change sp_anaLeft tab">关键用户</span><span
+					class="zhao_change sp_anaLeft tab">用户分析</span>
+			</h1>
+			<div class="com_clear"></div>
+			<!--qushifenxi-->
+			<div class="send_selContent panel">
+				<div class="tj_mar qushiAna_cont">
+					<h4>
+						转发数
+					</h4>
+					<div class="tj_show" id="spreadTrendReport"
+						style="width: 988px; height: 360px;">
+					</div>
+				</div>
+				<div class="com_clear">
+				</div>
+				<div class="qushiAna_cont">
+					<h4>
+						评论数
+					</h4>
+					<div class="tj_show" id="spreadTrendComment"
+						style="width: 988px; height: 360px;">
+					</div>
+				</div>
+			</div>
+			<!--@wotongji-->
+			<div class="send_selContent com_none event panel"
+				id="spreadLevelTable">
+
+			</div>
+			<!--guanjian-->
+			<div class="send_selContent event com_none panel">
+				<div class="send_selWay">
+					<div class="news_type">
+						<span>已传播：</span>
+						<div class="selW_selected job_list alreadyBtn" type="0">
+							粉丝
+						</div>
+						<div class="job_list alreadyBtn" type="1">
+							转发
+						</div>
+					</div>
+				</div>
+				<div class="com_clear"></div>
+				<div id="alreadySpread">
+
+				</div>
+				<div class="com_clear"></div>
+				<div class="send_selWay">
+					<div class="news_type">
+						<span>未传播：</span>
+						<div class="selW_selected job_list notBtn" type="0">
+							粉丝
+						</div>
+						<div class="job_list notBtn" type="1">
+							认证
+						</div>
+					</div>
+				</div>
+				<div class="com_clear"></div>
+				<div id="notSpread">
+
+				</div>
+			</div>
+			<!--yonghu-->
+			<div class="send_selContent com_none event panel">
+				<div class="send_selWay">
+					<div class="news_type">
+						<div class="selW_selected job_list userTabs" type="0">
+							全部用户
+						</div>
+						<div class="job_list userTabs" type="1">
+							转发用户
+						</div>
+						<div class="job_list userTabs" type="2">
+							评论用户
+						</div>
+					</div>
+				</div>
+				<div class="com_clear"></div>
+				<div class="tj_mar fensiAna_cont1">
+					<h4>
+						认证比例
+					</h4>
+					<div class="tj_show" id="userVipNum">
+
+					</div>
+				</div>
+				<div class="tj_mar fensiAna_cont1">
+					<h4>
+						性别比例
+					</h4>
+					<div class="tj_show" id="userGender">
+
+					</div>
+				</div>
+				<div class="com_clear"></div>
+				<div class="fensiAna_cont1">
+					<h4>
+						来源比例
+					</h4>
+					<div class="tj_show" id="userFromsNum">
+						
+					</div>
+				</div>
+				<div class="fensiAna_cont1">
+					<h4>
+						热词
+					</h4>
+					<div class="tj_show" id="userHot">
+						
+					</div>
+				</div>
+				<div class="com_clear"></div>
+				<div class="qushiAna_cont">
+					<h4>
+						地域分析
+					</h4>
+					<div class="tj_show" id="fsArea" style="width: 988px; height: 360px;">
+					</div>
+				</div>
+				<div class="com_clear"></div>
+				<div class="fensiAna_cont1">
+					<h4>
+						用户粉丝数
+					</h4>
+					<div class="tj_show" id="fsFans">
+
+					</div>
+				</div>
+				<div class="fensiAna_cont1">
+					<h4>
+						转发态度
+					</h4>
+					<div class="tj_show"  id="fsAttitude">
+
+					</div>
+				</div>
+				<div class="com_clear"></div>
+			</div>
+			<!--end-->
+		</div>
+	</div>
+	<!--sp_tails end-->
+</div>
+<!--spreed_analy end-->

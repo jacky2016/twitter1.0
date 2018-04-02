@@ -1,0 +1,16 @@
+﻿jquery.bgIframe		IE6下兼容背景插件
+jquery.loading		读取数据特效插件
+jquery.tool			通用工具插件(包含很多有用的通用方法，大多数插件的入口)
+jquery.tool.date		日期通用工具插件(对日期操作的通用方法)
+jquery.pngFix		IE6下兼容png图片插件
+jquery.scrollTo		滚动条滑动插件
+jquery.datePicker		选择日期插件
+jquery.timePicker		选择时间插件
+jquery.windows		弹出窗插件
+jquery.expression		微博高级表达式插件
+jquery.keyupTo		键盘抬起事件插件
+jquery.keyupTo.patch	自动完成匹配插件(autoComplete，基于jquery.keyupTo插件扩展)
+jquery.load.list 		加载列表信息插件
+jquery.load.table		加载表格信息插件
+jquery.pager.simple		简单表格分页插件(不带滑动特效的)
+jquery.regExp		验证插件(所有的验证都在这里,例:是否为空验证，长度验证，日期验证，手机验证，Url验证，邮箱验证.......)

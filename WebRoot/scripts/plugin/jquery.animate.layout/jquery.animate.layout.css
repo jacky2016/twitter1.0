@@ -1,0 +1,15 @@
+﻿.cardCase
+{
+	width: 69px;
+	height: 69px;
+	border: 1px solid #d3d3d3;
+	background: #f7f7f7;
+	text-align: center;
+	line-height: 69px;
+	color: #000;
+	font-size:16px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+

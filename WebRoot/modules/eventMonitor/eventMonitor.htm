@@ -1,0 +1,189 @@
+
+<!--event -->
+<div id="eventMonitor">
+	<div id="eventMonitor_main">
+		<div class="talkMe event" id="event_talkMe">
+			<!--send content-->
+			<div class="send_content">
+				<h1>
+				<span class="zhao_change span_title zhao_back">新浪</span>
+				<span class="zhao_change span_title">腾讯</span>
+				<!--<span class="zhao_change span_title">人民</span>-->
+				<!-- <span class="event_add imp_liRight"></span> -->
+				{pmi:sjjk_adddata_1}
+				</h1>
+				<!--wait check-->
+				<div class="send_selContent" id="listdiv">
+		    	</div>
+			</div>
+			<div class="com_clear"></div>
+			<div id="allPager" class="page_content">
+				
+			</div>
+		</div>
+		<!--event analyse-->
+		<div>
+			<div class="dataAnalysis event">
+				<!--send content-->
+				<div class="send_content com_none" id="eventAnalyse">
+					<h1>
+						<span class="zhao_change zhao_back event_anaLeft">趋势分析</span>
+						<span class="zhao_change event_anaLeft ">内容分析</span>
+						<span class="zhao_change event_anaLeft com_none" id="userfenxi">用户分析</span>
+						<span id="htname" class="imp_liRight font-color"></span>
+						<span class="imp_liRight">话题名称：</span>
+					</h1>
+					<div class="com_clear"></div>
+					<!--qushi analyse-->
+					<div class="send_selContent com_none" id="analymodule">
+						<div class="send_selWay">
+							<div class="news_type">
+								<div class="tabItem job_list" id="hour_24">
+									今天
+								</div>
+								<div class="tabItem job_list" id="day_7">
+									7天
+								</div>
+								
+								<span>从</span>
+								<input type="text" class="ana_select" id="datePickerStart"/>
+								<span>到</span>
+								<input type="text" class="ana_select" id="datePickerEnd"/>
+								<span class="ana_selBotton" id="searchInfo"></span>
+							</div>
+						</div>
+						<div class="com_clear"></div>
+						<div class="qushiAna_cont tj_show" id="likeWeekLine">
+							
+						</div>
+					</div>
+
+					<!--count analyse 内容分析-->
+					<div class="send_selContent tj_mar com_none" id="contentAnaly">
+						<div class="fensiAna_cont1">
+							<h4>
+								原创/转发
+							</h4>
+							<div class="tj_show" id="resShowDayPie">
+								
+							</div>
+						</div>
+						<div class="fensiAna_cont1">
+							<h4>
+								热门关键词
+							</h4>
+							<div class="tj_show" id="hot_keyword">
+								
+							</div>
+						</div>
+						<div class="com_clear"></div>
+						<div class="qushiAna_cont">
+							<h4>
+								关键观点
+							</h4>
+							<div class="send_selContent" id="keyviewdiv">
+							
+			    			</div>
+						</div>
+					</div>
+					<!--user analyse 用户分析-->
+					<div class="send_selContent tj_mar com_none" id="usesAnaly">
+						<!-- 
+						<div class="fensiAna_cont1 tj_mar">
+							<h4>
+								男女比例
+							</h4>
+							<div class="tj_show" id="user_scale">
+								
+							</div>
+						</div>
+						<div class="fensiAna_cont1 tj_mar">
+							<h4> 
+								认证比例
+							</h4>
+							<div class="tj_show" id="renz_scale">
+								
+							</div>
+						</div>
+						<div class="fensiAna_cont1">
+							<h4>
+								来源分布
+							</h4>
+							<div class="tj_show" id="source_spread">
+								
+							</div>
+						</div>
+						<div class="fensiAna_cont1">
+							<h4>
+								注册时间分布
+							</h4>
+							<div class="tj_show" id="enroll_spread">
+							
+							</div>
+						</div>
+						<div class="com_clear"></div>
+						<div class="qushiAna_cont">
+							<h4>
+								地域分布
+							</h4>
+							<div class="tj_show" id="terrain_analy">
+								
+							</div>
+						</div> -->
+						<div class="qushiAna_cont">
+							<h4>
+								关键用户
+							</h4>
+							<div class="send_selContent" id="keyuserdiv">
+			    			</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--event details-->
+		<div id="event_details" class="com_none">
+			<!--send content--> 
+			<div class="send_content">
+				<h1>
+					<span class="imp_liLeft">话题名称：</span><span class="imp_liLeft font-color" id="topname"></span>
+				</h1>
+				<div class="send_selWay event_xqSel" >
+								<div class="news_type">
+									<span class="sel_title">从</span>
+									<input type="text" class="ana_select" id="dateStart"/>
+									<span class="sel_title">到</span>
+									<input type="text" class="ana_select" id="dateEnd"/>
+									<span class="sel_title">关键词：</span>
+									<input type="text" class="ana_select" id="gjkey"/>
+									<span class="sel_title">筛选:</span>
+									<div class="talkMe_sel">
+										<div id="tps_shaiXuan">
+										</div>
+									</div> 
+									<span class="sel_title">排序:</span>
+									<div class="talkMe_sel">
+										<div id="tps_order">
+										</div>
+									</div>
+								<span class="ana_selBotton doBotton_mar" id="but_search"></span>
+								<span id="tps_exl" class="event_import doBotton_mar"></span>
+							   
+					     </div>
+					      <div class="com_clear"></div>
+				</div>
+				<div class="send_selContent listItem" id="lookList">
+
+				</div>
+			</div>
+			<div class="com_clear"></div>
+			<!--pages-->
+			<div id="allPager_xz" class="page_content">
+			</div>
+		</div>
+		<!--eventtails end-->
+	</div>
+	<!--event end-->
+	
+	

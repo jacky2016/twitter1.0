@@ -1,0 +1,141 @@
+﻿@charset "utf-8";
+/* CSS Document */
+#accountBinding{width:1020px; height:auto}
+#approveSetting h1 .approv_tip{ margin-left:10px}
+/*taskManager*/
+#taskManager   h1 .task_Mdo{ float:right;margin-left:0;height:25px;line-height:25px; text-align:center;color:#fff;width:100px;margin-right:10px; background-color:#95cde8;margin-top:5px; cursor:pointer}
+#taskManager   h1 .task_Mdo:hover{ background-color:#8cd4f6}
+.taskM_box{width:998px; margin:20px 0 20px 10px; height:670px;overflow:auto;border:#d9edf6 solid 1px;}
+.taskM_box .li_task{heihgt:30px;line-height:30px; float:left;text-align:left;color:#333;margin-top:10px; font-family: "Microsoft YaHei"; display:inline;padding-left:2px;}
+.taskM_box li .sysTtask_do{ float:left;}
+.taskM_box .tasks_style{float:left;width:20px;*width:18px;height:30px;line-height:30px;}
+.taskM_box .sysTask_edit{ background:url(images/sys_set.gif) no-repeat  -35px 5px}
+.taskM_box .sysTask_edit:hover{background:url(images/sys_set.gif) no-repeat -3px 5px; cursor:pointer}
+.taskM_box .sysTask_del{ background:url(images/sys_set.gif) no-repeat -35px -23px}
+.taskM_box .sysTask_del:hover{background:url(images/sys_set.gif) no-repeat -4px -23px; cursor:pointer}
+.taskM_box li .sysTask_left{background:url(images/sys_set.gif) no-repeat -35px -76px}
+.taskM_box li .sysTask_left:hover{background:url(images/sys_set.gif) no-repeat -4px -76px; cursor:pointer}
+.taskM_box li .sysTask_right{background:url(images/sys_set.gif) no-repeat -35px -51px}
+.taskM_box li .sysTask_right:hover{background:url(images/sys_set.gif) no-repeat -4px -51px; cursor:pointer}
+.taskM_box .second_tasks{width:190px;_width:200px;overflow:hidden;float:left}
+.second_tasks .ftask_title{width:182px;padding-left:10px;height:38px;line-height:38px; background-color:#21afb9; font-size:14px;color:#fff}
+.taskM_box .sec_taskBack{width:192px;float:left;padding-bottom:10px;}
+.taskM_box .second_tasks li{width:177px;_width:183px;padding-left:15px;_padding-left:10px;float:left;background-color:#f8f8f8;margin:0;border-top:#fff solid 1px;border-bottom:#eee solid 1px;}
+.taskM_box .second_tasks li:hover{background-color:#d8eefc}
+.taskM_box .second_tasks .sTask_back{background-color:#d8eefc;}
+.taskM_box .second_tasks .sTask_count{width:88px;*width:87px;overflow:hidden}
+.taM_skbox .three_box{width:816px;_width:810px;max-height:510px;_height:510px;overflow:auto;border-left:#d9edf6 solid 1px;padding-bottom:10px;float:right;}
+.three_box .stask_boxList{width:765px;_width:770px;overflow:hidden;margin:0 0 10px 20px; _margin-left:10px;}
+.three_box .h4_title{width:745px;_width:760px;padding:0 10px;height:30px;line-height:30px; background-color:#f8f8f8}
+.three_box .h4_title span{float:left}
+.three_box .h4_title .do_right{float:right}
+.three_box .h4_title .add_three{ width:20px;height:30px; background:url(images/sys_set.gif) no-repeat -30px -105px ;color:#21afb9;float:right;margin-right:5px;}
+.three_box .h4_title .add_three:hover{background:url(images/sys_set.gif) no-repeat 0 -105px ;cursor:pointer}
+.taskM_box .three_tasks{width:765px;_width:780px;float:left; overflow:hidden; padding-bottom:10px; background-color:#f8f8f8;}
+.taskM_box .three_tasks li{width:122px;*width:130px;_width:125px;background-color:#fff; display:inline;margin-left:9px;_margin-left:8px; display:inline}
+.taskM_box .three_tasks .tTask_back{background-color:#fff;}
+.taskM_box .three_tasks .thTask_count{width:78px;_width:72px; overflow:hidden}
+/*new tasks*/
+#new_tasks .send_selContent{padding:50px 0;}
+.service_style .task_Mtype{ float:left;width:200px;height:30px;line-heihgt:30px;font-family:"Microsoft YaHei"}
+.task_expression{ height:auto; background-color:#fafafa; border:#ccc solid 1px;width:580px; margin:10px auto;padding:10px;}
+.task_expression .exp_what{heihgt:25px;line-height:25px; text-align:right; font-family:"Microsoft YaHei";}
+.task_expression .exp_what span{color:#21afb9}
+.task_expression .exp_what span:hover{color:#333;cursor:pointer}
+.task_expression .set_esp{height:100px;width:580px; overflow:auto;background-color:#fff;border:#ccc solid 1px;font-family:"Microsoft YaHei";font-size:14px;}
+.more_doExp{ height:auto;line-height:25px;border-top:#fff solid 1px;padding-top:5px; position:relative;z-index:999;}
+.more_doExp .mynum_list {float:left; width:155px;position:static}
+.more_doExp .mynum_list h2{padding-left:10px; background-color:#fff; border:#ccc solid 1px;width:130px;}
+.more_doExp .mynum_list ul {width:140px;max-height:140px;_height:130px;overflow:auto;position:absolute;left:84px;top:32px;z-index:1000}
+#yc_key .mynum_list ul{left:100px;}
+.more_doExp .mynum_list ul li{ padding-left:0px;width:100px; margin:0 auto}
+.more_doExp .mynum_list li input{margin:0 5px;}
+.more_doExp .set_exW{color:#21afb9}
+.more_doExp .set_exW:hover{ cursor:pointer; color:#333}
+.word_timeSet{width:100px;height:30px;line-height:30px}
+.sys_savePass{height:15px;line-height:15px;width:600px;margin:20px auto}
+#new_tasks .push_save {margin-left:100px;} 
+
+/*authoriity*/
+#authorityManager .authority_box{width:1000px;margin:20px auto;}
+.taskM_box .author_right{float:left;width:790px;_width:760px;background-color:#fff}
+.taskM_box .author_right .au_save{height:25px;line-height:25px;color:#fff;margin-top:5px;margin-bottom:0;padding:0 10px;background-color:#3ebac3}
+.taskM_box .author_right .au_save:hover{background-color:#21afb9; cursor:pointer}
+.author_right .author_set{width:770px;_width:740px;float:left;margin-left:20px;_margin-left:10px;margin-bottom:10px; display:inline}
+.author_right .author_set h1{width:770px;background:none}
+.author_flist{height:auto}
+.author_set .web_table{width:770px;margin:0;}
+.author_set .author_mar{margin:10px 2px 0 10px;*margin-top:6px;_margin-top:5px}
+.author_set .author_thMar{margin-top:-2px}
+/*pop-up*/
+.add_check{width:337px; height:auto;margin:0 auto; font-family:"Microsoft YaHei"}
+.add_check h4{height:30px;line-height:30px;margin-top:10px; border-bottom:#ccc solid 1px}
+.add_check .check_list{float:left;width:100%;max-height:70px; overflow:auto}
+.add_check .check_list li{float:left;margin-right:20px;height:25px;line-height:25px;font-family:"Microsoft YaHei";display:inline}
+.add_check .check_list input{float:left;margin:6px 2px 0 0;*margin:0 2px 0 0;_margin:1px 2px 0 0}
+.add_check .check_list .check_Lcount{padding-left:20px;width:90px;height:25px;line-height:25px;float:left;overflow:hidden;white-space: nowrap}
+.add_check .sys_checkMar{margin:0 60px 0 5px}
+.add_check .check_doW{margin:0 15px 0 5px;}
+/*bind_zhao*/
+.bind_zhao{width:370px; height:auto;}
+.bind_zhao .bind_tbiao{ width:100%;height:110px;margin-bottom:20px;overflow:hidden}
+.bind_tbiao .tBiao_list{width:110px;height:110px;float:left;margin-left:10px; display:inline; cursor:pointer}
+.bind_tbiao .tBiao_back1{background:url(images/bind_tBiao.gif) no-repeat}
+.bind_tbiao .tBiao_back1:hover{background:url(images/bind_tBiao.gif) no-repeat 0 -109px}
+.bind_tbiao .tBiao_back2{background:url(images/bind_tBiao.gif) no-repeat -127px 0}
+.bind_tbiao .tBiao_back2:hover{background:url(images/bind_tBiao.gif) no-repeat -127px -109px}
+.bind_tbiao .tBiao_back3{background:url(images/bind_tBiao.gif) no-repeat -256px 0}
+.bind_tbiao .tBiao_back3:hover{background:url(images/bind_tBiao.gif) no-repeat -256px -109px}
+.goOn_bind{width:300px; height:auto}
+.goOn_bind .bind_lStyle{width:60px;float:left}
+/*add user*/
+.sys_addUsers{width:350px; height:auto}
+.sys_addUsers .push_ok{ margin-right:100px}
+/*new tasks*/
+#sys_Tasktails .service_style .push_save{margin-left:100px}
+#new_tasks .new_tasks{height:545px}
+/*first task*/
+.new_Ftask{ width:310px; height:auto; }
+/*fail_Fset*/
+.fail_Fset{width:560px;height:auto;margin:0 auto;padding-top:20px;background-color:#fff}
+.fail_Fset .taskM_box{width:100%;height:400px; overflow:auto;margin:0; border:0}
+.fail_Fset .taskM_box .second_tasks{width:155px}
+.fail_Fset .taskM_box .sec_taskBack{width:160px;overflow:hidden}
+.fail_Fset .taskM_box .li_task{width:138px;_width:145px;margin-left:0;}
+.fail_Fset .author_do{width:542px;height:40px;line-height:40px;background-color:#eee;}
+.fail_Fset .author_do .do_botton{ width:60px;height:25px;line-height:25px; text-align:center;margin-top:8px; float:right;margin-right:10px; cursor:pointer}
+.fail_Fset .author_do .do_botton1{background-color:#21afb9;}
+.fail_Fset .author_do .do_botton1:hover{ background-color:#27bac4}
+.fail_Fset .author_do .do_botton2{ background-color:#ccc}
+.fail_Fset .author_do .do_botton2:hover{ background-color:#d8d6d6}
+.fail_Fset .author_do .sel_style{height:23px;line-height:23px;_height:20px;_line-height:20px;width:120px; float:right;margin-top:8px;margin-right:10px; font-family:"Microsoft YaHei"}
+.fail_Fset .author_set {width:385px;min-height:345px;border:#eee solid 1px;border-top:0;float:left;padding-bottom:10px;}
+.fail_Fset .author_set .fail_fSetTable{width:370px; margin:0}
+.fail_Fset  .sec_taskBack  .add_terms{ background-color:#21afb9; text-align:center}
+.fail_Fset  .sec_taskBack  .add_terms:hover{color:#fff;background-color:#21afb9;}
+.fail_Fset .box_count{ width:420px; margin:0 auto; overflow:hidden}
+.fail_Fset .F_wBor{width:297px;margin-left:100px; display:inline;max-height:240px;_height:240px;float:left;overflow:auto; border:#eee solid 1px;padding-bottom:10px;}
+.fail_Fset .F_wBor li{margin-left:5px;}
+
+/*帐号绑定 人民微博*/
+#back_border{height:5px;width:790px; background-color:#d70000;margin:0 auto}
+#back-back{width:790px;height:420px;background:url(images/shouquan_back.gif) repeat-x;margin:0 auto;}
+#people_logo{width:680px; margin:0 auto; height:60px;background:url(images/people.gif) no-repeat;}
+#back-back .h1_style{width:585px; margin:0 auto;font-size:13px;padding-left:30px;font-weight:normal;}
+#back-back  .h1_style .pingtai_name{color:#d70000}
+#back_box{width:585px;margin:0 auto;height:210px;padding-top:30px;background:url(images/back_contBack.gif) no-repeat}
+#back_box .div_style .label_style{float:left; width:80px; text-align:right}
+#back_box .div_style{height:30px;line-height:30px;margin-top:20px;}
+#back_box .sqEror_tip{color:#f00;font-size:12px; margin-left:90px;}
+#back_box .div_style .input_style{width:200px;padding-left:10px;height:28px;line-height:28px;margin-left:10px;border:#eee solid 1px; float:left;font-family: "微软雅黑","宋体";}
+#back_box .div_style .input_style:hover{ border:#d70000 solid 1px;}
+#back-back h1 .tip_back{ width:60px;height:60px;margin-right:10px;background:url(images/back-back.gif) no-repeat -10px 0}
+#back-back h1 .tip_back2{ width:60px;height:60px;margin-right:10px;background:url(images/back-back.gif) no-repeat -10px -56px}
+#back-back .back_doBack{float:right;width:83px;height:40px;line-height:40px; text-align:center;cursor:pointer;color:#fff}
+#squan_tijiao{width:670px; height:350px;line-height:35px;padding-top:20px;border-top: #ccc dashed 2px; margin:0  auto;margin-top:20px;}
+#squan_tijiao .botton_style{height:35px;width:90px;color:#fff;font-family: "微软雅黑","宋体"; font-size:18px;text-align:center; cursor:pointer;float:right;margin-left:10px;}
+#squan_tijiao .tijiao_botton{border:1px solid #EB6767;background:#d70000; }
+#squan_tijiao .quxiao_botton{border:1px solid #ccc;background:#ccc; }
+.login_autho{width:400px; margin:0 auto}
+
+

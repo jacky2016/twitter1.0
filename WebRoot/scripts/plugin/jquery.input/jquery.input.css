@@ -1,0 +1,36 @@
+﻿/*----------------------------------select start----------------------------------*/
+.selectInput .pulldown
+{
+	width: 140px;
+	height: 28px;
+	line-height: 28px;
+	background: url(images/pullDown.gif);
+	padding-left: 10px;
+	cursor: pointer;
+}
+.selectInput .list
+{
+	width: 148px;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 27px;
+	background-color: #cfeaee;
+	border: #b4e1e7 solid 1px;
+	display: none;
+}
+.selectInput .list .item
+{
+	width: 138;
+	height: 25px;
+	line-height: 25px;
+	font-family: "微软雅黑";
+	border-bottom: #d8eff2 solid 1px;
+	padding-left: 10px;
+}
+.selectInput .list .itemed
+{
+	cursor: pointer;
+	background-color: #d8eff2;
+}
+/*----------------------------------select end----------------------------------*/

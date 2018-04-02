@@ -1,0 +1,78 @@
+﻿首页HomePage
+我的微博MyTwitter
+	我的首页  MyHomePage
+	@提到我的 TalkMe
+	我的评论  MyReview
+	发布管理  PublishManage
+	数据分析  DataAnalysis	
+微博舆情TwitterPubSentiment
+	舆情展示 PubSentimentView
+	舆情处理 PubSentimentDeal
+事件监控EventMonitor
+账号监测AccountMonitor
+传播分析SpreadAnalysis
+协同办公Coordination
+	任务通知 TaskNotify
+	考核管理 ExamineManager
+	机构管理 DepartmentManager
+预警服务 AlertService
+	微博推送 TwitterPush
+	预警信息 AlertInfo
+系统管理 SysManager
+	账号绑定 AccountBinding
+	任务管理 TaskManager
+	审核设置 ApproveSetting
+	用户维护 UserManager
+	角色权限维护 AuthorityManager
+
+
+
+
+编号			说明					对象名称						js文件名称
+1				主模块				portal							portal
+1.1			导航条				navigationBars				portal.navigationBars
+1.2			公共方法			base								portal.base
+1.3			当前用户信息	currentUser					portal.currentUser
+1.4			枚举对象			enum							portal.enum
+1.5			中介者对象		mediator						portal.mediator
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+2				首页					homePage					homePage
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+3				我的微博			myTwitter						myTwitter
+3.1			我的首页  		myHomePage				myTwitter.myHomePage
+3.2			@提到我的 		talkMe							myTwitter.talkMe
+3.3			我的评论  		myReview					myTwitter.myReview
+3.4			发布管理  		publishManage				myTwitter.publishManage
+3.5			数据分析  		dataAnalysis					myTwitter.dataAnalysis
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+4				微博舆情			twitterPubSentiment		twitterPubSentiment
+4.1			舆情展示 			pubSentimentView		twitterPubSentiment.View
+4.2			舆情处理 			pubSentimentDeal		twitterPubSentiment.Deal
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+5				事件监控			eventMonitor				eventMonitor
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+6				账号监测			accountMonitor			accountMonitor
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+7				传播分析			spreadAnalysis				spreadAnalysis
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+8				协同办公			coordination					coordination
+8.1			任务通知 			taskNotify						coordination.taskNotify
+8.2			考核管理 			examineManager			coordination.examineManager
+8.3			机构管理 			departmentManager		coordination.departmentManager
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+9				预警服务 			alertService					alertService
+9.1			微博推送				twitterPush						twitterPush
+9.2			预警信息				alertInfo							alertInfo
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+10			系统管理 			sysManager					sysManager
+10.1			账号绑定 			accountBinding				sysManager.accountBinding
+10.2			任务管理 			taskManager				sysManager.taskManager	
+10.3			审核设置 			approveSetting				sysManager.approveSetting
+10.4			用户维护 			userManager				sysManager.userManager
+10.5			角色权限维护 	authorityManager			sysManager.authorityManager
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+

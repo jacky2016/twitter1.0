@@ -1,0 +1,23 @@
+﻿@charset "utf-8";
+/* CSS Document */
+#pubSentimentView{width:1020px;margin:0 auto;height: auto}
+#pubSentimentView .twitterPubSentiment{width:1018px;border:#eee solid 1px;height:auto;float:left;margin-bottom:10px}
+.twitterPubSentiment h1 span{ float:left;margin-left:10px}
+.twitterPubSentiment h1 .span_navi{font-weight:normal}
+.twitterPubSentiment .twitter_list{ width:998px;background-color:#fff; height:auto;float:left;padding:10px}
+.twitter_list .list_style{width:90px; position:relative;margin-right:20px;float:left;height:35px;line-height:35px;cursor:pointer;display:inline;font-weight:bold;z-index:1000;position:relative;text-align:center}
+.twitter_list .list_style:hover{color:#3d96d2}
+.list_style .twitter_listAll{width:530px;border:#ccc solid 1px; background:url(images/tw_back.gif) left bottom repeat-x; background-color:#fff;padding-bottom:10px; max-height:240px;_height:120px; overflow:auto;position:absolute; left:15px; top:35px;z-index:1001}
+.tw_tipPic{width:20px;height:20px; background:url(images/Twitter.gif) no-repeat 0 -300px;position:absolute; left:30px; top:31px;z-index:1100}
+.twitter_listAll .list_secNavi{width:490px;overflow:hidden;margin:10px 0 10px 20px;border-bottom:#eee solid 1px}
+.twitter_listAll h4{float:left;width:60px;overflow:hidden; cursor:auto;height:25px;line-height:25px; font-size:14px;font-family:"Microsoft YaHei"; text-align:left; color:#333}
+.twitter_listAll p{float:left;width:430px;float:left}
+.twitter_listAll p span{float:left;overflow:hidden;text-align:center;height:25px;line-height:25px;font-family:"Microsoft YaHei"; font-weight:normal;color:#333;margin-left:10px;display:inline}
+.twitter_listAll p span:hover{color:#3d96d2}
+.list_style .three_seled{color:#3d96d2}
+.send_selWay .tw_do{width:133px;float:left;margin:13px 0 0 10px;_margin-left:10px}
+.send_selWay .sel_title{float:left;margin-left:10px}
+.all_import{float:left;width:64px;height:27px;margin-left:5px;background:url(images/yq_img.gif) no-repeat -1px -31px;cursor:pointer;}
+#view .all_import:hover{ background:url(images/yq_img.gif) no-repeat -66px -31px;}
+#view .cont_doleft .sim_num{ color:#21afb9;}
+#view .cont_doleft  .sim_num:hover{cursor:pointer}

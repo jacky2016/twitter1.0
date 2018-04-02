@@ -1,0 +1,68 @@
+﻿@charset "utf-8";
+/* CSS Document */
+#pushService{width:1020px; height:auto}
+#pushService .event table .event_do{width:60px}
+/*service_details*/
+#service_tails{overflow:hidden;}
+#service_tails .send_selContent{padding:20px 0;}
+.service_style{line-height:30px;width:800px;overflow:hidden; margin:0 auto;margin-top:10px; font-family:"Microsoft YaHei"}
+.service_style .p_way{float:left;margin:11px 5px 0 0;_margin-top:8px; display:inline;}
+.service_style  select{ border:#e7e7e7 solid 1px;font-family:"Microsoft YaHei"}
+.service_style .task_add{width:102px;height:30px;line-height:30px;float:left;background:url(images/push.gif) no-repeat; text-align:center; color:#fff }
+.service_style .task_add:hover{background:url(images/push.gif) no-repeat 0 -30px;cursor:pointer}
+.service_style .task_addCount{width:680px;height:110px; overflow:hidden;padding-bottom:10px; background-color:#fafafa; border:#ccc solid 1px;margin-left:100px;margin-top:10px;}
+.service_way{width:800px;overflow:hidden; height:35px;line-height:35px; margin:0 auto;margin-top:10px; }
+.service_way .ser_title{height:30px;line-height:30px;margin-left:5px;float:left}
+.service_way .ser_Tback1{width:60px;height:30px;line-height:30px;float:left}
+#service_tails .service_way .push_cycle{margin:4px 5px 0 0;width:50px;height:30px;line-height:30px}
+.service_style .push_cycle{ float:left;width:70px;height:30px;line-height:30px;}
+.service_style .push_Ttype{ float:left;width:50px;height:30px;line-height:30px;margin-left:10px}
+.service_style .push_hours{height:29px;line-height:29px; float:left;margin-left:10px;width:130px}
+.service_style .push_time{height:30px;line-height:30px;float:left;width:130px}
+.service_style .pushservices_quanxian{margin-left:100px;float:left}
+.service_style .push_do{width:80px;height:35px; line-height:35px; text-align:center;color:#333;float:left; cursor:pointer; color:#fff; display:inline }
+.service_style .push_close{background-color:#bec3c7}
+.service_style .push_close:hover{ background-color:#BCBCBC}
+.service_style .push_save {background-color:#3ebac3;margin-right:10px;}
+.service_style .push_save:hover{background-color:#21afb9;}
+/*push pop_up*/
+.push_show{width:450px; height:auto;}
+.giveMe_do .push_table{width:100%;_width:95%; margin:0}
+.giveMe_do .push_showList{width:100%;overflow:auto;max-height:130px;_height:130px;margin:10px 0; border-top:#ccc solid 1px;border-bottom:#ccc solid 1px}
+.giveMe_do .push_showList2{width:90%;margin-left:40px;}
+/*yujing up-up*/
+.yujing_show{width:280px; height:auto}
+/*address_list*/
+.address_ist{width:635px;background-color:#fff;}
+.address_istCont{width:100%;height:400px;overflow:auto;}
+.address_ist .event_Wadd{width:500px;}
+.address_ist .push_ok{float:right;_margin:0;}
+.address_ist .address_lLeft{width:135px; overflow:hidden;border-right:0;float:left;}
+.address_ist .address_title{width:123px;height:38px;line-height:38px; background-color:#21afb9; padding-left:10px; font-size:14px;color:#fff}
+.taskSel_title{hright:38px;line-height:38px;width:471px;padding-left:10px; background-color:#21afb9;font-size:14px;color:#fff}
+.address_lLeft .address_Fsorts{width:123px;padding-left:10px;height:25px;line-height:25px;margin-bottom:1px;cursor:pointer; background-color:#7bbfc4; color:#fff}
+.address_lLeft .address_sorts{width:123px;float:left;}
+.address_lLeft .address_sorts li{width:113px;height:25px;line-height:25px; background-color:#eee;border-top:#fff solid 1px;border-bottom:#ccc solid 1px;font-family:"Microsoft YaHei";padding-left:20px;}
+.address_lLeft .address_sorts li:hover{background-color:#D2D2D2; cursor:pointer;}
+.address_lLeft .address_sorts .li_back{background-color:#D2D2D2}
+.address_ist .address_lRight{width:480px; overflow:hidden;float:left;height:auto!important;min-height:300px;border:#eee solid 1px;}
+.address_lRight .addressCount_list{width:100%;float:left; background-color:#eee;border-left:0;padding-top:10px;}
+.address_lRight .addressCount_list li{width:130px;height:20px;line-height:20px; overflow:hidden;float:left;font-family:"Microsoft YaHei";margin:0 0 10px 10px; display:inline}
+.address_lRight .addressCount_list li:hover{color:#21afb9}
+.addressCount_list li input,.addressCount_list li label{float:left}
+.addressCount_list li input{margin:4px 5px 0 0; _margin-top:0;display:inline}
+.address_ist .address_lRight h4{font:"Microsoft YaHei";margin:10px 0 0 10px; font:normal 14px "Microsoft YaHei"}
+.address_ist .address_lRight .addressSelected_list{ border:0}
+/*warning_newsList*/
+.warning_newsList .h2_style{width:980px;padding:0 10px;margin:10px auto;font-size:16px; font-weight:normal;height:40px;line-height:40px; background-color:#eee;}
+.warning_newsList .h2_count{width:890px;overflow:hidden; tex-overflow:ellipsis;white-space:nowrap;}
+.h2_style  .title_cont{width:930px;overflow:hidden}
+.h2_style  .weibo_allShow{width:30px;height:40px; background:url(images/root.gif) -5px -190px no-repeat; }
+.h2_style  .weibo_allShow:hover{ background:url(images/root.gif) -5px -226px no-repeat; cursor:pointer}
+.h2_style  .weibo_newWarning{width:30px;height:40px; background:url(images/event_do.gif) no-repeat -30px -220px }
+/*warned*/
+#warned .cont_do{width:940px}
+/*warnTongzhi*/
+.warning_newsList .event_list{width:930px;padding:0 35px; margin:0 auto;border-bottom:#dbdbdb solid 2px;margin-top:10px; font-size:16px;}
+/*warnTongzhi  deleteButton*/
+.warn_del{width:30px;height:40px;background:url(images/event_do.gif) no-repeat -3px -18px;cursor:pointer;}

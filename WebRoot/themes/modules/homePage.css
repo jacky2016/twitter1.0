@@ -1,0 +1,80 @@
+﻿@charset "utf-8";
+/* CSS Document */
+#homePage{width:100%;position:relative; font:normal 14px "微软雅黑"; z-index:999}
+#homePage .in_Mset{width:auto;position:absolute;right:-180px;top:-40px;cursor:pointer; z-index:1015}
+#homePage .in_MsetBotton{width:32px;height:30px;float:left;background:url(images/set.gif) no-repeat 0 -212px}
+#homePage .in_MsetBotton:hover{background:url(images/set.gif) no-repeat 0 -244px}
+#homePage .in_MsetShow{background:url(images/set.gif) no-repeat 0 -244px}
+#homePage .in_MsetBor{border:#a5dbe2 solid 1px;border-right:0;}
+#homePage .in_MsetLists{width:135px;padding:5px 10px;background-color:#fff; border:#a5dbe2 solid 2px;float:left}
+#homePage .in_MsetLists .Mzhao_list{ height:25px;line-height:25px}
+.Mzhao_list .Mzhao_sel{ float:left;margin-top:5px;_margin-top:0}
+.Mzhao_list .Mzhao_cont{float:left;padding-left:20px;width:90px;margin-left:2px;overflow:hidden;font-family:"微软雅黑"; height:25px;line-height:25px; display:inline;white-space: nowrap;}
+.in_MsetLists .Mzhao_cont:hover{ color:#21afb9;cursor:pointer}
+/*set all content*/
+.in_setAllCount{width:340px;height:auto; margin:0 auto;overflow:hidden; background-color:#fff}
+.in_setAllCount ul{width:360px}
+.in_setAllCount ul li{height:25px;line-height:25px;width:150px;margin:10px 20px 0 0;padding:0 5px;cursor:pointer;float:left; background-color:#eee;overflow:hidden; display:inline}
+.in_setAllCount  ul li:hover{color:#21afb9}
+.in_setAllCount  ul li label{ font-family:"微软雅黑";float:left; cursor:pointer}
+.in_setAllCount  ul li input{margin-right:5px;}
+.in_setAllCount  ul li input{float:left;margin-top:7px;_margin-top:3px;}
+.Hmk_back1{padding-left:20px;background:url(images/zhao_select.gif) no-repeat 0  5px}
+.Hmk_back2{padding-left:20px;background:url(images/zhao_select.gif) no-repeat 0 -18px}
+.Hmk_back3{padding-left:20px;background:url(images/zhao_select.gif) no-repeat 0 -39px}
+/*homepage*/
+#homePage .box_show{ height:auto;float:left;border:#e7e7e7 solid 1px;}
+#homePage .ric_show{width:1018px;margin-bottom:10px;}
+#homePage h1 .ric_downLoad{width:30px;float:right;margin-right:20px}
+#homePage h1 .ric_titleBack{ width:25px; height:30px;margin:2px 0 0 10px}
+#homePage h1 .ric_backImg{background:url(images/set.gif) no-repeat -4px -283px}
+#homePage h1 .ric_titleBack1{ background:url(images/set.gif) no-repeat 0 -48px}
+#homePage h1 .ric_titleBack2{ background:url(images/set.gif) no-repeat 0 -133px}
+#homePage h1 .ric_titleBack3{ background:url(images/set.gif) no-repeat 0 -91px}
+#homePage h1 .ric_titleBack4{ background:url(images/set.gif) no-repeat 0 -175px}
+/*rc botton style*/
+#homePage h1 .zh_color{color:#21afb9}
+#homePage h1 .do_Works{ width:20px; height:20px;float:right;margin:8px 5px 0 0;cursor:pointer}
+#homePage h1 .do_Close{ background:url(images/set.gif) no-repeat  -21px -13px;}
+#homePage h1 .do_Close:hover{ background:url(images/set.gif) no-repeat -61px -14px}
+#homePage h1 .do_hide{ background:url(images/set.gif) no-repeat -1px  -13px}
+#homePage h1 .do_hide:hover{ background:url(images/set.gif) no-repeat -43px -13px}
+#homePage .box_show .tj_show {float:left;}
+#homePage .hpUserDataLst .tj_show div{ width:180px;height:100px;overflow:hidden;margin-left:20px;float:left;color:#fff; display:inline;cursor:pointer}
+#homePage .tj_show .tj_weibo{ background-color:#4cc5cd;}
+#homePage .tj_show .tj_fensi{background-color:#e17e90;}
+#homePage .tj_show .tj_see{background-color:#a8c77b;}
+#homePage .tj_show .tj_send{background-color:#93c4e4;}
+#homePage .tj_show .tj_say{background-color:#c8abdb;}
+#homePage .tj_show div h2{width:140px;margin:10px 20px 0 20px;text-align:right;font:normal 17px "微软雅黑"}
+#homePage .tj_show .h2_center{height:35px;line-height:35px;}
+#homePage .tj_show .weibo_back{background:url(images/ric.gif) no-repeat }
+#homePage .tj_show .fensi_back{ background:url(images/ric.gif) no-repeat 0 -118px}
+#homePage .tj_show .see_back{ background:url(images/ric.gif) no-repeat 0 -162px}
+#homePage .tj_show .send_back{background:url(images/ric.gif) no-repeat 0 -38px}
+#homePage .tj_show .say_back{background:url(images/ric.gif) no-repeat 0 -78px;}
+/*hot zhuti*/
+#homePage .data_show{width:503px;margin-right:10px;margin-bottom:10px;float:left}
+#homePage .mar_right{margin-right:0}
+.W_liBack1{ background-color:#EBAFAB}
+.W_liBack1:hover{background-color:#D9726D}
+.W_liBack2{ background-color:#CECE00}
+.W_liBack3{ background-color:#A4CEE6}
+.W_liBack3:hover{background-color:#70A2BF}
+.W_liBack2:hover{background-color:#BFBF00}
+.W_liBack4{ background-color:#B8D088}
+.W_liBack4:hover{background-color:#98B65C}
+.W_liBack5{ background-color:#E0BADD}
+.W_liBack5:hover{background-color:#BB83B6}
+.W_liBack10{ background-color:#EDC48D}
+.W_liBack10:hover{background-color:#D9726D}
+.W_liBack9{ background-color:#C9C9C9}
+.W_liBack9:hover{background-color:#A8A8A8}
+.W_liBack8{ background-color:#C0C081}
+.W_liBack8:hover{background-color:#848442}
+.W_liBack7{ background-color:#AAD5FF}
+.W_liBack7:hover{background-color:#60AFFF}
+.W_liBack6{ background-color:#75d0d6}
+.W_liBack6:hover{background-color:#4cb6bd}
+#homePage .tj_show .imp_center{ margin-top:20px}
+#homePage .tj_show .imp_word{margin-top:30px}
